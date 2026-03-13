@@ -3,107 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impact Dashboard | Clean Blue Green Corp Analytics</title>
+    <title>Stakeholder Dashboard | Clean Blue Green Corp</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body class="dashboard-page">
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+    <aside class="dash-sidebar">
+        <div class="logo-area">
+            <div class="logo-box">CBG</div>
+        </div>
+        <nav class="dash-nav">
+            <a href="#" class="active"><i class="fas fa-chart-line"></i> Overview</a>
+            <a href="#"><i class="fas fa-microscope"></i> Audit Logs</a>
+            <a href="#"><i class="fas fa-bolt"></i> Kinetic Yield</a>
+            <a href="#"><i class="fas fa-shield-alt"></i> Signal Defense</a>
+            <a href="#"><i class="fas fa-file-invoice"></i> Procurement</a>
+            <hr>
+            <a href="index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Exit Secure Session</a>
+        </nav>
+    </aside>
+
+    <main class="dash-content">
+        <header class="dash-header">
+            <div class="welcome">
+                <h1>Welcome, <span class="highlight">Procurement Officer 882</span></h1>
+                <p>Facility: <span class="mono">PORT_TERMINAL_SAVANNAH_GA</span></p>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="investor-relations.html">Investor Relations</a>
-                <a href="dashboard.html" class="active">Live Impact</a>
-                <a href="compliance-hub.html">Compliance</a>
-                <a href="contact.html" class="cta-nav">Stakeholder Login</a>
-            </nav>
-        </div>
-    </header>
+            <div class="header-badges">
+                <span class="status-badge green">EDI TIER-5 CERTIFIED</span>
+            </div>
+        </header>
 
-    <section class="dash-hero">
-        <div class="container">
-            <span class="badge">Live Stewardship Analytics</span>
-            <h1>The <span class="highlight">Impact Ledger</span></h1>
-            <p>Real-time data visualization of Clean Blue Green Corp’s global environmental and digital advocacy footprint.</p>
-        </div>
-    </section>
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <span class="label">Molecular Purity</span>
+                <div class="value">98.2%</div>
+                <div class="trend up">+2.1% from last audit</div>
+            </div>
+            <div class="metric-card">
+                <span class="label">Signal Interference</span>
+                <div class="value">0.02 <small>μW/m²</small></div>
+                <div class="trend safe">BELOW AEAH THRESHOLD</div>
+            </div>
+            <div class="metric-card">
+                <span class="label">Kinetic Offset</span>
+                <div class="value">422 <small>kWh</small></div>
+                <div class="trend">VAWT-Unit 04 Active</div>
+            </div>
+        </section>
 
-    <section class="metrics-grid">
-        <div class="container">
-            <div class="tile-row">
-                <div class="metric-tile">
-                    <span class="tile-label">CO2 OFFSET (MT)</span>
-                    <div class="tile-value">12,482</div>
-                    <div class="tile-trend">+4.2% This Month</div>
+        
+        
+        <section class="dash-main-grid">
+            <div class="data-box large">
+                <h3>Live Spectral Monitoring (60GHz Range)</h3>
+                <div class="spectral-placeholder">
+                    
                 </div>
-                <div class="metric-tile">
-                    <span class="tile-label">TOXIC CHEMICAL REDUCTION (GAL)</span>
-                    <div class="tile-value">845,000</div>
-                    <div class="tile-trend">Tier 01/02 Audits</div>
+                <p class="mono-line">> Scanning for unauthorized pulsed microwave emissions... <span class="text-green">NONE DETECTED</span></p>
+            </div>
+
+            <div class="data-box small">
+                <h3>Active Procurement</h3>
+                <ul class="order-list">
+                    <li>
+                        <span class="order-id">#PO-9928</span>
+                        <span class="order-status dispatch">IN DISPATCH</span>
+                        <small>55-Gal CBG-01 Concentrate</small>
+                    </li>
+                    <li>
+                        <span class="order-id">#PO-9910</span>
+                        <span class="order-status delivered">DELIVERED</span>
+                        <small>Graphene Shielding (120yd)</small>
+                    </li>
+                </ul>
+                <a href="cart.html" class="btn-outline-sm full-width">Reorder Supplies</a>
+            </div>
+        </section>
+
+        <section class="audit-history">
+            <h3>Compliance Timeline</h3>
+            <div class="timeline-h">
+                <div class="t-step complete">
+                    <span class="t-date">Jan 2026</span>
+                    <p>Initial Site Assessment</p>
                 </div>
-                <div class="metric-tile">
-                    <span class="tile-label">ADVOCACY REACH (AEAH.ORG)</span>
-                    <div class="tile-value">2.4M</div>
-                    <div class="tile-trend">Digital Rights Awareness</div>
+                <div class="t-step complete">
+                    <span class="t-date">Feb 2026</span>
+                    <p>Molecular Remediation</p>
                 </div>
-                <div class="metric-tile highlighted-tile">
-                    <span class="tile-label">EDI CERTIFICATIONS ISSUED</span>
-                    <div class="tile-value">142</div>
-                    <div class="tile-trend">Active Verifications</div>
+                <div class="t-step active">
+                    <span class="t-date">Mar 2026</span>
+                    <p>Signal Hardening Phase</p>
+                </div>
+                <div class="t-step pending">
+                    <span class="t-date">Apr 2026</span>
+                    <p>Tier-10 Recertification</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    
-    <section class="data-charts">
-        <div class="container">
-            <div class="chart-wrapper">
-                <div class="chart-box">
-                    <h3>Energy Composition</h3>
-                    <div class="placeholder-chart">
-                        <div class="chart-legend">
-                            <span><i class="green"></i> Wind (45%)</span>
-                            <span><i class="blue"></i> Solar (35%)</span>
-                            <span><i class="dark"></i> Kinetic (20%)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="chart-box">
-                    <h3>Digital Safety Index</h3>
-                    <p>Monitoring the reduction of signal-harassment incidents in EDI-certified zones.</p>
-                    <div class="line-graph-sim">
-                         <div class="graph-bar" style="height: 80%;"></div>
-                         <div class="graph-bar" style="height: 60%;"></div>
-                         <div class="graph-bar" style="height: 40%;"></div>
-                         <div class="graph-bar" style="height: 20%;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="esg-report">
-        <div class="container text-center">
-            <h3>Quarterly Governance Reports</h3>
-            <p>Download our formal disclosures on environmental impact and technology safety compliance.</p>
-            <div class="report-btns">
-                <button class="btn-primary">Download Q1 2026 ESG Report</button>
-                <button class="btn-outline">Annual Impact Summary</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Data Verified via Blockchain Ledger</p>
-        </div>
-    </footer>
+        </section>
+    </main>
 
 </body>
 </html>
