@@ -3,90 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signal Intelligence & Security | Clean Blue Green Corp</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
-</head>
-<body class="security-page">
+    <title>Signal Intelligence | Clean Blue Green Corp Security Division</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* LOCKED HEADER (Identical to Index) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary-green); }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* SECURITY CONTENT */
+        .intel-hero { background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('signal-grid.jpg'); color: white; padding: 120px 0; }
+        .intel-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; padding: 80px 0; }
+        
+        .intel-card { background: white; border: 1px solid #cbd5e1; padding: 40px; border-radius: 4px; height: fit-content; }
+        .mono-list { font-family: 'JetBrains Mono'; font-size: 0.95rem; list-style: none; padding: 0; }
+        .mono-list li { padding: 15px 0; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; }
+        .status-tag { color: var(--electric-blue); font-weight: 700; }
+
+        .shield-graphic { background: #000; border-radius: 8px; padding: 30px; color: #4ade80; font-family: 'JetBrains Mono'; }
+        .threat-alert { border: 2px solid #ef4444; color: #ef4444; padding: 15px; margin-top: 20px; text-align: center; font-weight: 800; }
+    </style>
+</head>
+<body>
+
+    <div style="background: #ef4444; color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        SIGNAL ALERT: UNAUTHORIZED SPECTRUM HARASSMENT DETECTED IN SECTOR-09 | COUNTER-MEASURES ACTIVE
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="aeah-initiative.html">AEAH Advocacy</a>
-                <a href="security-intel.html" class="active">Signal Intel</a>
-                <a href="rd-lab.html">R&D Lab</a>
-                <a href="contact.html" class="cta-nav">Report Breach</a>
+            <nav class="nav-links">
+                <a href="index.html">The Hub</a>
+                <a href="rd-lab.html">Kinetic R&D</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
-    <section class="security-hero">
+    <section class="intel-hero">
         <div class="container">
-            <span class="badge">Defensive Infrastructure</span>
-            <h1>Securing the <span class="highlight">Human Frequency</span></h1>
-            <p>We provide the auditing and hardware solutions required to detect, isolate, and neutralize unauthorized signal intrusion and electronic harassment.</p>
+            <h2 style="font-size: 3.5rem; font-weight: 800; margin: 0;">Signal <span style="color:var(--electric-blue)">Hardening</span></h2>
+            <p style="font-size: 1.4rem; color: #94a3b8; max-width: 850px;">Forensic detection and neutralization of unauthorized pulsed microwave emissions, EMF trespass, and cognitive-electronic interference. We provide the "Faraday-Standard" for human environments.</p>
         </div>
     </section>
 
-    <section class="signal-intel">
-        <div class="container">
-            <h2>Auditing the Invisible Environment</h2>
-            
-            <div class="intel-grid">
-                <div class="intel-card">
-                    <div class="intel-icon">📡</div>
-                    <h3>Spectral Analysis</h3>
-                    <p>We perform full-spectrum sweeps (DC to 60GHz) to identify non-standard signal emissions that violate EDI Tier 5 privacy standards.</p>
-                </div>
-                <div class="intel-card">
-                    <div class="intel-icon">🛡️</div>
-                    <h3>EMF Hardening</h3>
-                    <p>Deploying Faraday-grade infrastructure to create "Zero-Signal Zones" for sensitive data processing and human recovery areas.</p>
-                </div>
-                <div class="intel-card">
-                    <div class="intel-icon">🔍</div>
-                    <h3>Signal Forensic Reporting</h3>
-                    <p>Providing court-admissible evidence for AEAH-led litigation against unauthorized electronic surveillance and digital trespass.</p>
+    <div class="container">
+        <div class="intel-grid">
+            <div class="intel-content">
+                <h2 style="font-size: 2.5rem; font-weight: 800;">Forensic Counter-Measures</h2>
+                <p style="font-size: 1.1rem; color: var(--slate);">Clean Blue Green Corp uses military-grade spectral analysis to identify signal sources that violate the <strong>Law of Man</strong>. Our audits don't just find the noise—they provide the evidentiary chain required for legal defense.</p>
+                
+                
+
+                <div class="shield-graphic">
+                    > SCANNING FREQUENCY: 60GHz...<br>
+                    > NOISE FLOOR: -110dBm [SAFE]<br>
+                    > PULSE DETECTION: 3.4GHz [ANOMALY DETECTED]<br>
+                    > ORIGIN: UNKNOWN TERRESTRIAL SOURCE<br>
+                    > STATUS: NEUTRALIZING VIA CBG-SHIELD TIER 07
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="security-stack">
-        <div class="container">
-            <div class="stack-wrapper">
-                <div class="stack-text">
-                    <h2>The CBG Security Stack</h2>
-                    <p>Our infrastructure is air-gapped from the traditional public internet for all Tier 10+ verifications, ensuring total sovereignty for our clients.</p>
-                    <ul class="check-list">
-                        <li>Quantum-Resistant Encryption (AES-Q)</li>
-                        <li>Kinetic-Powered Cooling & Server Uptime</li>
-                        <li>Passive Graphene Signal Attenuation</li>
-                    </ul>
-                </div>
-                <div class="stack-visual">
-                    
-                </div>
+            <div class="intel-card">
+                <h3 style="margin-top:0;">Intelligence Capabilities</h3>
+                <ul class="mono-list">
+                    <li><span>RF Interference Sweep</span> <span class="status-tag">ACTIVE</span></li>
+                    <li><span>Pulsed Microwave Forensic</span> <span class="status-tag">ACTIVE</span></li>
+                    <li><span>Faraday Room Validation</span> <span class="status-tag">ACTIVE</span></li>
+                    <li><span>Acoustic Infrasound Scan</span> <span class="status-tag">ACTIVE</span></li>
+                    <li><span>Satellite Signal Tracing</span> <span class="status-tag">ACTIVE</span></li>
+                    <li><span>Bio-Digital Integrity</span> <span class="status-tag">ACTIVE</span></li>
+                </ul>
+                <div class="threat-alert">LEVEL 4 TRESSPASS PROTECTION</div>
+                <a href="compliance-hub.html" class="btn-buy" style="display:block; text-align:center; margin-top:20px; text-decoration:none; padding:15px; background:var(--deep-blue); color:white; font-weight:800; border-radius:4px;">Procure Tier 06 Audit</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="security-cta">
-        <div class="cta-inner">
-            <h3>Immediate Response Required?</h3>
-            <p>If you suspect unauthorized signal harassment or a breach of your digital environment, contact our rapid response team immediately.</p>
-            <a href="contact.html" class="btn-primary">Initialize Security Audit</a>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Signal Defense Division</p>
+    <footer style="background: #000; color: white; padding: 80px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Clean Blue Green Corp. | Signal Intelligence Division | All Rights Enforced Under Law of Man.</p>
         </div>
     </footer>
 
