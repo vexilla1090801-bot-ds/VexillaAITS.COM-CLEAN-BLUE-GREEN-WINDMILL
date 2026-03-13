@@ -3,76 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fleet Operations | Clean Blue Green Corp Logistics</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body class="fleet-page">
+    <title>Fleet Operations | Clean Blue Green Corp Deployment Division</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* LOCKED HEADER (Identical to Hub) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary-green); }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* FLEET CONTENT */
+        .fleet-hero { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('industrial-fleet.jpg'); color: white; padding: 100px 0; }
+        .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; padding: 80px 0; }
+        
+        .asset-card { background: white; border: 1px solid #cbd5e1; border-radius: 4px; overflow: hidden; }
+        .asset-info { padding: 30px; }
+        .asset-info h3 { font-size: 1.8rem; margin: 0 0 10px 0; color: var(--primary-green); }
+        .asset-tag { font-family: 'JetBrains Mono'; font-size: 0.8rem; color: var(--slate); border: 1px solid #e2e8f0; padding: 4px 8px; border-radius: 3px; }
+        
+        .capability-list { margin-top: 20px; font-size: 0.95rem; list-style: none; padding: 0; }
+        .capability-list li { padding: 8px 0; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; gap: 10px; }
+        .capability-list li::before { content: '◈'; color: var(--electric-blue); }
+    </style>
+</head>
+<body>
+
+    <div style="background: var(--deep-blue); color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        DISPATCH STATUS: 14 MOBILE UNITS ON-SITE | 6 RAPID RESPONSE UNITS STANDBY
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="global-ops.html">Global Ops</a>
-                <a href="fleet-operations.html" class="active">Fleet</a>
-                <a href="supply-chain.html">Supply Chain</a>
-                <a href="contact.html" class="cta-nav">Dispatch Request</a>
+            <nav class="nav-links">
+                <a href="index.html">The Hub</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="rd-lab.html">Kinetic R&D</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
     <section class="fleet-hero">
         <div class="container">
-            <span class="badge">Mobilized Restoration</span>
-            <h1>The <span class="highlight">Mobile Response</span> Fleet</h1>
-            <p>Deploying specialized chemical-containment vehicles and signal-intelligence mobile units to crisis zones and industrial sites worldwide.</p>
+            <h2 style="font-size: 3.5rem; font-weight: 800; margin: 0;">Tactical <span style="color:#4ade80">Deployment</span></h2>
+            <p style="font-size: 1.4rem; color: #94a3b8; max-width: 850px;">Clean Blue Green Corp maintains a multi-industrial fleet of specialized vehicles equipped for rapid site restoration, molecular decontamination, and signal forensics.</p>
         </div>
     </section>
 
-    
-    <section class="vehicle-specs">
-        <div class="container">
-            <h2>The Response Arsenal</h2>
-            <div class="fleet-grid">
-                <div class="fleet-card">
-                    <h4>Class A: Chemical Restoration Unit (CRU)</h4>
-                    <p>Heavy-duty transport equipped with high-pressure CBG-01 application systems for industrial port and warehouse decontamination.</p>
-                </div>
-                <div class="fleet-card">
-                    <h4>Class B: Signal Intelligence Mobile (SIM)</h4>
-                    <p>Shielded mobile labs designed for on-site spectral analysis and AEAH-aligned electronic harassment auditing.</p>
-                </div>
-                <div class="fleet-card">
-                    <h4>Class C: Kinetic Deployment Trailer (KDT)</h4>
-                    <p>Mobile staging for rapid VAWT windmill assembly and emergency blockchain node initialization.</p>
+    <div class="container">
+        
+        <div class="fleet-grid">
+            
+            <div class="asset-card">
+                <div class="asset-info">
+                    <span class="asset-tag">CLASS A: MOLECULAR RESPONSE</span>
+                    <h3>Mobile Lab Unit ML-1</h3>
+                    <p>Rapid deployment vehicle for Tier 01-05 audits. Features on-board VOC spectrometry and deep-core soil sampling equipment.</p>
+                    <ul class="capability-list">
+                        <li>Real-time Chemical Analysis</li>
+                        <li>Hull-Cleaning Runoff Containment</li>
+                        <li>Atmospheric Scrubbing Verification</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
 
-    
-    <section class="fleet-map">
-        <div class="container">
-            <div class="map-box">
-                <h3>Global Hub Coverage</h3>
-                <p>Strategically positioned near major maritime ports and technology corridors to ensure a 24-hour response window for any EDI-certified facility.</p>
-                <ul class="hub-list">
-                    <li><strong>Eastern Seaboard Hub:</strong> Savannah, GA</li>
-                    <li><strong>Gulf Coast Hub:</strong> Houston, TX</li>
-                    <li><strong>Pacific Defense Hub:</strong> Long Beach, CA</li>
-                    <li><strong>EU Operations:</strong> Rotterdam, NL</li>
-                </ul>
+            <div class="asset-card">
+                <div class="asset-info">
+                    <span class="asset-tag">CLASS B: SIGNAL INTELLIGENCE</span>
+                    <h3>SIGINT Forensic Cruiser</h3>
+                    <p>Equipped with 360-degree spectral scanners and pulsed microwave triangulation arrays. Primary asset for Tier 06-09 Signal Trespass audits.</p>
+                    <ul class="capability-list">
+                        <li>60GHz Frequency Mapping</li>
+                        <li>Unauthorized Pulse Localization</li>
+                        <li>Faraday Hardening Assessment</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Mobile Operations Division</p>
+            <div class="asset-card">
+                <div class="asset-info">
+                    <span class="asset-tag">CLASS C: KINETIC LOGISTICS</span>
+                    <h3>VAWT Transport & Install</h3>
+                    <p>Heavy-duty transport for Vertical-Axis Wind Turbine modules. Includes hydraulic crane systems for rapid kinetic staging in off-grid environments.</p>
+                    <ul class="capability-list">
+                        <li>Turbine Component Transport</li>
+                        <li>On-site Kinetic Calibration</li>
+                        <li>Grid-Tie Safety Verification</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer style="background: #000; color: white; padding: 80px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Clean Blue Green Corp. | Fleet & Logistics Division | Rapid Site Restoration Worldwide.</p>
         </div>
     </footer>
 
