@@ -446,3 +446,60 @@
     font-size: 0.9rem;
     margin-top: 10px;
 }
+/* Lookup & Ledger Styling */
+.search-box-container {
+    max-width: 600px;
+    margin: -40px auto 40px;
+    display: flex;
+    gap: 10px;
+}
+
+#certSearch {
+    flex: 2;
+    padding: 15px;
+    border: 2px solid var(--accent-green);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.search-btn {
+    flex: 1;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ledger-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.ledger-table th, .ledger-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.status-active {
+    color: #22c55e;
+    font-weight: 800;
+}
+
+.lock-seal {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 8px solid var(--electric-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--electric-blue);
+    font-weight: 900;
+    font-size: 1.5rem;
+    background: white;
+}
