@@ -3,188 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solomon Kin Records | Global Infrastructure & Depository</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:italic,wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .text-gold { color: #FFB800; }
-        .bg-gold { background-color: #FFB800; }
-        .border-gold { border-color: #FFB800; }
-        .nav-link:hover { color: #FFB800; transition: all 0.3s ease; }
-        .tier-card:hover { border-color: #FFB800; transform: translateY(-5px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-    </style>
+    <title>Clean Blue Green Corp | Environmental Research & Kinetic Restoration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
-<body class="pt-24">
+<body class="research-firm">
 
-    <header class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10 px-8 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-4">
-            <img src="CleanBlueGreenCorp.png" alt="SKR" class="h-10 w-auto">
-            <div class="h-6 w-[1px] bg-white/20 mx-1"></div>
-            <span class="text-[9px] tracking-[0.3em] font-bold text-gray-500 uppercase">Bureau of Records</span>
-        </div>
-        <nav class="hidden lg:flex gap-10 text-[10px] font-black uppercase tracking-[0.3em]">
-            <a href="index.html" class="text-gold">Foundation</a>
-            <a href="depository.html" class="nav-link">The Depository</a>
-            <a href="certification-tiers.html" class="nav-link">Certification</a>
-            <a href="non-profits.html" class="nav-link">Social Impact</a>
-        </nav>
-        <div class="flex items-center gap-6">
-            <a href="login.html" class="text-[9px] uppercase font-bold tracking-widest text-gray-400 hover:text-white">Sign In</a>
-            <a href="cart.html" class="bg-gold text-black px-5 py-2 text-[9px] font-black uppercase tracking-widest flex items-center gap-2">
-                Cart <span class="opacity-50">/</span> 0
-            </a>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp" class="main-logo">
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html" class="active">Research Hub</a>
+                <a href="rd-lab.html">Windmill Tech</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="aeah-initiative.html">AEAH Advocacy</a>
+                <div class="user-actions">
+                    <a href="login.html" class="login-link">Stakeholder Login</a>
+                    <a href="cart.html" class="cart-btn">Procurement (0)</a>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <section class="relative min-h-[80vh] flex items-center px-12 overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-30">
-            <img src="record_hero.jpg" class="w-full h-full object-cover grayscale">
-        </div>
-        <div class="relative z-10 max-w-4xl">
-            <span class="text-gold font-mono text-xs tracking-[0.5em] uppercase mb-4 block">Institutional Record Keeping</span>
-            <h1 class="serif text-6xl md:text-8xl italic leading-tight mb-8">
-                The Definitive Global <br>Infrastructure for Assets.
-            </h1>
-            <p class="text-gray-400 text-xl leading-relaxed max-w-2xl mb-12">
-                Bridging physical proof and digital innovation. Solomon Kin Records ensures every product, person, and piece of IP is protected, broadcasted, and scaled with absolute integrity.
-            </p>
-            <div class="flex gap-6">
-                <a href="certification-tiers.html" class="bg-white text-black px-10 py-5 font-black uppercase tracking-widest text-[11px] hover:bg-gold transition-all">Start Certification</a>
-                <a href="#pillars" class="border border-white/20 px-10 py-5 font-black uppercase tracking-widest text-[11px] hover:bg-white/5 transition-all">The Five Pillars</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="pillars" class="py-32 px-12 bg-[#080808]">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="serif text-5xl italic mb-16">Organizational Architecture</h2>
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div class="p-8 border border-white/5 bg-black">
-                    <span class="text-gold text-[10px] font-bold">01</span>
-                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Registry & Legal</h4>
-                    <p class="text-gray-500 text-[11px]">Physical & digital record keeping.</p>
-                </div>
-                <div class="p-8 border border-white/5 bg-black">
-                    <span class="text-gold text-[10px] font-bold">02</span>
-                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Creative & Talent</h4>
-                    <p class="text-gray-500 text-[11px]">Managing the face of innovation.</p>
-                </div>
-                <div class="p-8 border border-white/5 bg-black">
-                    <span class="text-gold text-[10px] font-bold">03</span>
-                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Enterprise & Growth</h4>
-                    <p class="text-gray-500 text-[11px]">B2B Logistics and acquisitions.</p>
-                </div>
-                <div class="p-8 border border-white/5 bg-black">
-                    <span class="text-gold text-[10px] font-bold">04</span>
-                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Tech & Infra</h4>
-                    <p class="text-gray-500 text-[11px]">Software and health systems.</p>
-                </div>
-                <div class="p-8 border border-white/5 bg-black">
-                    <span class="text-gold text-[10px] font-bold">05</span>
-                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Strategy & Culture</h4>
-                    <p class="text-gray-500 text-[11px]">The internal heart of the node.</p>
+    <section class="environmental-hero">
+        <div class="hero-content">
+            <span class="science-tag">KINETIC ENERGY & MOLECULAR STEWARDSHIP</span>
+            <h1>Harnessing the <span class="wind-text">Wind</span> to Heal the <span class="earth-text">Earth</span>.</h1>
+            <p>A research-first S-Corp dedicated to neutralizing industrial runoff and signal harassment through Vertical-Axis Wind Turbine (VAWT) infrastructure and Bio-Safe molecular agents.</p>
+            <div class="hero-visual">
+                <div class="vawt-animation">
+                    <div class="blade"></div>
+                    <div class="blade"></div>
+                    <div class="blade"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-32 px-12 bg-black">
-        <div class="max-w-7xl mx-auto text-center mb-20">
-            <h2 class="serif text-5xl italic mb-4">Entrepreneurial Certification</h2>
-            <p class="text-gray-500 uppercase tracking-widest text-[10px]">Verify your level of leadership in the global directory</p>
-        </div>
-        
-        <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
-                <h3 class="font-black text-xl uppercase italic mb-1">Public Kin</h3>
-                <span class="text-gray-600 text-[10px] uppercase font-bold mb-6">Level 01</span>
-                <div class="text-3xl font-black mb-8">FREE</div>
-                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
-                    <li>• Basic Contact Entry</li>
-                    <li>• Directory Category</li>
-                    <li>• Global Public Search</li>
-                </ul>
-                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Register</button>
+    <section class="mission-pillars">
+        <div class="container grid-3">
+            <div class="pillar">
+                <div class="icon">🌿</div>
+                <h3>Molecular Purity</h3>
+                <p>Developing biodegradable agents to strip VOCs from maritime and industrial surfaces.</p>
             </div>
-            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
-                <h3 class="font-black text-xl uppercase italic mb-1">Verified Kin</h3>
-                <span class="text-gold text-[10px] uppercase font-bold mb-6">Level 02</span>
-                <div class="text-3xl font-black mb-8">$49<span class="text-xs">/YR</span></div>
-                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
-                    <li>• Owner Professional Bio</li>
-                    <li>• Technology Health Audit</li>
-                    <li>• Verified Badge on Profile</li>
-                </ul>
-                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Upgrade</button>
+            <div class="pillar">
+                <div class="icon">🌀</div>
+                <h3>Kinetic Autonomy</h3>
+                <p>Deploying VAWT units to power air-gapped security nodes and local grids.</p>
             </div>
-            <div class="tier-card border-2 border-gold p-10 flex flex-col items-center bg-white/5 relative">
-                <div class="absolute -top-3 bg-gold text-black text-[9px] font-black px-3 py-1 uppercase tracking-widest">Recommended</div>
-                <h3 class="font-black text-xl uppercase italic mb-1">Pro Kin</h3>
-                <span class="text-gold text-[10px] uppercase font-bold mb-6">Level 03</span>
-                <div class="text-3xl font-black mb-8">$199<span class="text-xs">/YR</span></div>
-                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
-                    <li>• Direct B2B Networking</li>
-                    <li>• IP & Trademark Audit</li>
-                    <li>• Supply Chain Verification</li>
-                </ul>
-                <button class="w-full bg-gold text-black py-3 text-[10px] font-black uppercase tracking-widest">Get Pro Status</button>
-            </div>
-            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
-                <h3 class="font-black text-xl uppercase italic mb-1">Master Kin</h3>
-                <span class="text-gray-600 text-[10px] uppercase font-bold mb-6">Level 04</span>
-                <div class="text-3xl font-black mb-8">$999<span class="text-xs">/YR</span></div>
-                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
-                    <li>• Physical Proof Records</li>
-                    <li>• Acquisition Histories</li>
-                    <li>• Investor-Grade Access</li>
-                </ul>
-                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Request Audit</button>
+            <div class="pillar">
+                <div class="icon">🛡️</div>
+                <h3>Signal Defense</h3>
+                <p>Shielding human environments from unauthorized pulsed microwave and EMF interference.</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#050505] border-t border-white/10 px-12 py-20">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-            <div>
-                <img src="CleanBlueGreenCorp.png" class="h-10 mb-6">
-                <p class="text-gray-500 text-xs leading-relaxed">
-                    Solomon Kin Records is a global record keeping company and media group dedicated to the integrity of human and digital assets.
-                </p>
+    <section class="verification-marketplace" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Forensic Verification Packages</h2>
+                <p>Scientific assessments for industrial, commercial, and residential sovereignty.</p>
             </div>
-            <div>
-                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Infrastructure</h5>
-                <ul class="text-gray-400 text-xs space-y-4">
-                    <li><a href="depository.html" class="hover:text-white transition-all">Directory</a></li>
-                    <li><a href="legal.html" class="hover:text-white transition-all">IP Services</a></li>
-                    <li><a href="certification-tiers.html" class="hover:text-white transition-all">Certifications</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Community</h5>
-                <ul class="text-gray-400 text-xs space-y-4">
-                    <li><a href="non-profits.html" class="hover:text-white transition-all">Non-Profit Partners</a></li>
-                    <li><a href="events.html" class="hover:text-white transition-all">Entrepreneur Events</a></li>
-                    <li><a href="mentors.html" class="hover:text-white transition-all">Mentorship Program</a></li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Governance</h5>
-                <ul class="text-gray-400 text-xs space-y-4">
-                    <li><a href="privacy.html" class="hover:text-white transition-all">Privacy Protocol</a></li>
-                    <li><a href="terms.html" class="hover:text-white transition-all">Terms of Service</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition-all">Record Inquiry</a></li>
-                </ul>
+
+            <div class="package-grid">
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 1</span>
+                    <h4>VOC Surface Audit</h4>
+                    <p>Molecular scan for volatile organic compounds and industrial residue.</p>
+                    <div class="pkg-price">$850</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 2</span>
+                    <h4>EMF Spectrum Sweep</h4>
+                    <p>Detection of standard radio-frequency interference and grid noise.</p>
+                    <div class="pkg-price">$1,200</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card featured">
+                    <span class="pkg-tier">Tier 3</span>
+                    <h4>Signal Harassment Audit</h4>
+                    <p>Forensic analysis for pulsed microwave and unauthorized signal trespass.</p>
+                    <div class="pkg-price">$2,500</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 4</span>
+                    <h4>Kinetic Efficiency Scan</h4>
+                    <p>Site assessment for VAWT turbine placement and wind-tunnel optimization.</p>
+                    <div class="pkg-price">$1,800</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 5</span>
+                    <h4>Maritime Runoff Analysis</h4>
+                    <p>Specialized water-purity testing for shipping ports and hull-cleaning sites.</p>
+                    <div class="pkg-price">$3,200</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 6</span>
+                    <h4>Bio-Digital Integrity Cert</h4>
+                    <p>Combined molecular and digital security certification for office environments.</p>
+                    <div class="pkg-price">$4,500</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 7</span>
+                    <h4>Air-Gapped Node Audit</h4>
+                    <p>Physical and digital security verification for isolated server environments.</p>
+                    <div class="pkg-price">$5,000</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 8</span>
+                    <h4>GSA Compliance Review</h4>
+                    <p>Verification for government contractors seeking Blue-Green status.</p>
+                    <div class="pkg-price">$6,500</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card">
+                    <span class="pkg-tier">Tier 9</span>
+                    <h4>AEAH Sovereign Shield</h4>
+                    <p>The highest level of signal defense and legal-technical verification.</p>
+                    <div class="pkg-price">$12,000</div>
+                    <button class="btn-add">Select Package</button>
+                </div>
+
+                <div class="pkg-card enterprise">
+                    <span class="pkg-tier">Tier 10</span>
+                    <h4>Global Infrastructure Audit</h4>
+                    <p>Multi-site environmental and signal security for international corporations.</p>
+                    <div class="pkg-price">Custom Quote</div>
+                    <button class="btn-add">Inquire</button>
+                </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:row-reverse md:flex-row justify-between items-center text-[10px] font-mono text-gray-600 uppercase tracking-widest">
-            <div>© 2026 Solomon Kin Records. All Rights Reserved.</div>
-            <div class="mt-4 md:mt-0">Node-01 // Philadelphia, PA</div>
+    </section>
+
+    <footer class="research-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="Clean Blue Green Corp.png" alt="Logo">
+                <p>Advancing the Law of Man through Kinetic Research.</p>
+            </div>
+            <div class="footer-links">
+                <a href="impact-2030.html">2030 Vision</a>
+                <a href="legal-defense.html">Legal Defense</a>
+                <a href="ai-governance.html">AI Governance</a>
+                <a href="contact.html">Dispatch</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Clean Blue Green Corp. | Research Division
         </div>
     </footer>
 
 </body>
 </html>
-
-
