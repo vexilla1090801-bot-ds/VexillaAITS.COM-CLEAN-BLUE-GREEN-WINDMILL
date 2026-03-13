@@ -19,18 +19,43 @@
         }
         body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); line-height: 1.6; }
         .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
-        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 30px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        .flex-nav { display: flex; justify-content: space-between; align-items: center; }
+        
+        /* HEADER FIX: Tighter, no overlap, locked navigation */
+        header { 
+            background: #ffffff; 
+            border-bottom: 3px solid var(--primary-green); 
+            padding: 20px 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+        }
+        .flex-nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: nowrap; /* Prevents button from jumping to center */
+        }
         
         /* LOGO SCALED 4X */
-        .logo-container { display: flex; align-items: center; gap: 20px; }
-        .main-logo { height: 160px; width: auto; transition: transform 0.3s ease; }
-        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
         .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; }
+        /* NAVIGATION FIX: Ensure enough space for the pill button */
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
         .nav-links a:hover { color: var(--primary-green); }
-        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+        .cta-pill { 
+            background: var(--primary-green); 
+            color: white !important; 
+            padding: 12px 28px; 
+            border-radius: 4px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            display: inline-block; /* Keeps button whole */
+        }
         
         /* HERO SECTION */
         .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('windmill-array.jpg'); background-size: cover; background-position: center; color: white; padding: 140px 0; text-align: center; }
@@ -58,7 +83,7 @@
     <header>
         <div class="container flex-nav">
             <div class="logo-container">
-                <img src="CleanBlueGreenCorp.png" alt="CleanBlueGreenCorp Official Logo" class="main-logo">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
                 <div class="brand-titles">
                     <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
                     <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
