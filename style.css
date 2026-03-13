@@ -1212,3 +1212,61 @@
     font-weight: 800;
     letter-spacing: 1px;
 }
+/* Crisis Page Styles */
+.status-red {
+    background: #ef4444;
+    color: white;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.timeline-v {
+    border-left: 2px solid #ef4444;
+    padding-left: 30px;
+    margin-top: 40px;
+}
+
+.v-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.v-time {
+    position: absolute;
+    left: -75px;
+    font-weight: 800;
+    color: #ef4444;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.agency-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.agency-tag {
+    background: #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #475569;
+}
+
+.secure-contact {
+    display: inline-block;
+    background: #000;
+    color: #ef4444;
+    padding: 20px 40px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 20px;
+}
