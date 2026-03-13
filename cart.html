@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procurement Cart | Clean Blue Green Corp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="cart-page">
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-box">CBG</div>
+                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+            </div>
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="cleaning-solutions.html">Solutions</a>
+                <a href="compliance-hub.html">Verification</a>
+                <a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart-main">
+        <div class="container">
+            <h1 class="section-title">Industrial <span class="highlight">Procurement List</span></h1>
+            
+            <div class="cart-container">
+                <div class="cart-items">
+                    <table class="procurement-table">
+                        <thead>
+                            <tr>
+                                <th>Item Specification</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>CBG-01 Industrial Concentrate</strong><br>
+                                    <span class="sku">SKU: BIO-CHM-01-55</span>
+                                </td>
+                                <td>$1,250.00</td>
+                                <td><input type="number" value="2" class="qty-input"></td>
+                                <td>$2,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Tier 5 EDI Verification Audit</strong><br>
+                                    <span class="sku">SKU: SRV-AUDIT-T5</span>
+                                </td>
+                                <td>$4,500.00</td>
+                                <td><input type="number" value="1" class="qty-input"></td>
+                                <td>$4,500.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="cart-summary">
+                    <div class="summary-box">
+                        <h3>Order Summary</h3>
+                        <div class="sum-row"><span>Subtotal:</span> <span>$7,000.00</span></div>
+                        <div class="sum-row"><span>Tax (Exempt for SAM.gov Partners):</span> <span>$0.00</span></div>
+                        <div class="sum-total"><span>Total Estimate:</span> <span>$7,000.00</span></div>
+                        
+                        <div class="procurement-options">
+                            <label><input type="checkbox" checked> Utilize GSA Schedule Pricing</label>
+                            <label><input type="checkbox"> Request Net-30 Invoicing</label>
+                        </div>
+
+                        <button class="btn-primary-lg full-width">Proceed to Final Review</button>
+                        <p class="disclaimer">Note: Final shipping for hazardous materials (CBG-01) calculated at dispatch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cross-sell">
+        <div class="container">
+            <h4>Commonly Bundled with your Audit:</h4>
+            <div class="bundle-card">
+                <p><strong>Graphene Signal-Shielding Prep Kit</strong> - Ensure your facility passes the Tier 5 spectral test on the first visit.</p>
+                <button class="btn-outline-sm">+ Add to Order ($450.00)</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
