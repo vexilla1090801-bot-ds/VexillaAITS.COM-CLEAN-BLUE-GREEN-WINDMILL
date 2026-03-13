@@ -768,3 +768,68 @@
     background: var(--electric-blue);
     border-radius: 4px 4px 0 0;
 }
+/* Governance & Board Styling */
+.leadership-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.leader-card {
+    flex: 1;
+    background: #fff;
+    padding: 35px;
+    border-radius: 4px;
+    border-top: 4px solid var(--dark-slate);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.ethics-committee {
+    border-top-color: var(--primary-green);
+    background: #f0fdf4;
+}
+
+.code-box {
+    background: var(--dark-slate);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    margin: 80px 0;
+}
+
+.statute-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.statute {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.portal-box {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+}
+
+.login-sim {
+    margin: 20px auto;
+    max-width: 400px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-lock {
+    background: #777;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
