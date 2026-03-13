@@ -281,3 +281,69 @@
     text-align: center;
     padding: 80px 20px;
 }
+/* Contact Page Specifics */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    margin-top: -50px;
+}
+
+.registry-tag {
+    color: var(--primary-green);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.cbg-intake-form label {
+    display: block;
+    font-weight: 700;
+    margin: 15px 0 5px;
+    font-size: 0.9rem;
+}
+
+.cbg-intake-form input, 
+.cbg-intake-form select, 
+.cbg-intake-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.submit-btn {
+    background: var(--electric-blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--primary-green);
+}
