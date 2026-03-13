@@ -1329,6 +1329,54 @@
     font-size: 0.9rem;
     line-height: 2;
 }
+/* Fleet Page Styles */
+.fleet-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.fleet-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-bottom: 5px solid var(--primary-green);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.map-box {
+    background: #f8fafc;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 80px 0;
+}
+
+.hub-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.hub-list li {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--electric-blue);
+    font-weight: 600;
+}
 
 .pulse-text { animation: green-pulse 1.5s infinite; }
 @keyframes green-pulse { 50% { opacity: 0.5; } }
+
