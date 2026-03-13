@@ -560,3 +560,47 @@
     font-size: 1.5rem;
     background: white;
 }
+/* Capabilities Statement Styling */
+.comp-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.comp-item {
+    flex: 1;
+    background: #f0fdf4;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-green);
+}
+
+.comp-item h3 { color: var(--primary-green); margin-bottom: 15px; }
+.comp-item ul { padding-left: 20px; line-height: 2; }
+
+.government-data {
+    padding: 80px 0;
+    background: white;
+}
+
+.codes-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.codes-table th { background: var(--dark-slate); color: white; padding: 15px; }
+.codes-table td { padding: 15px; border-bottom: 1px solid #eee; text-align: left; }
+
+.diff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.diff-card {
+    border-left: 4px solid var(--electric-blue);
+    padding: 20px;
+    background: #f9fbf9;
+}
