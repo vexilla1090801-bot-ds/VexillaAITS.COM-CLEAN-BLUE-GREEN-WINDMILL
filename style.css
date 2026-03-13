@@ -347,3 +347,53 @@
 .submit-btn:hover {
     background: var(--primary-green);
 }
+/* Compliance Hub Styling */
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 0;
+}
+
+.policy-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.policy-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--electric-blue);
+    background: #eef7ff;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.mono-text {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed var(--primary-green);
+    margin: 20px 0;
+}
+
+.fake-ledger {
+    background: #111;
+    color: #0f0;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.ledger-line {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
