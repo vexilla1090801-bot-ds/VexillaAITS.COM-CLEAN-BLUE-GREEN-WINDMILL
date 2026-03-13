@@ -1,0 +1,61 @@
+/* Advocacy / AEAH Styling */
+.advocacy-hero {
+    background: linear-gradient(135deg, #1a5d1a 0%, #0077b6 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.mission-list {
+    background: var(--accent-green);
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.impact-split {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.impact-side {
+    flex: 1;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.side-negative { background: #fdf2f2; border-left: 5px solid #e53e3e; }
+.side-positive { background: #f0fdf4; border-left: 5px solid #22c55e; }
+
+.donate-box {
+    background: var(--dark-slate);
+    color: white;
+    padding: 60px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 80px 0;
+}
+
+.donation-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.d-btn {
+    padding: 10px 25px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.d-btn:hover { background: white; color: var(--dark-slate); }
