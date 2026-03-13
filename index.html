@@ -3,182 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Blue Green Corp | Bio-Digital Integrity & Kinetic Systems</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Solomon Kin Records | Global Infrastructure & Depository</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:italic,wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: white; font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .text-gold { color: #FFB800; }
+        .bg-gold { background-color: #FFB800; }
+        .border-gold { border-color: #FFB800; }
+        .nav-link:hover { color: #FFB800; transition: all 0.3s ease; }
+        .tier-card:hover { border-color: #FFB800; transform: translateY(-5px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
 </head>
-<body class="institutional-site">
+<body class="pt-24">
 
-    <div class="system-ticker">
-        <div class="container flex-between">
-            <div class="ticker-content">
-                <span class="pulse-icon"></span> 
-                <span class="mono">NETWORK_STATUS: OPTIMAL</span>
-                <span class="separator">|</span>
-                <span class="mono">EDI_TIER_COMPLIANCE: 20/20</span>
-                <span class="separator">|</span>
-                <span class="mono">KINETIC_OUTPUT: 4.2 GWh</span>
-            </div>
-            <div class="top-auth-links">
-                <a href="login.html">Stakeholder Portal</a>
-                <a href="cart.html" class="cart-pill"><i class="cart-icon"></i> Procurement (0)</a>
-            </div>
+    <header class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10 px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-4">
+            <img src="Solologo.png" alt="SKR" class="h-10 w-auto">
+            <div class="h-6 w-[1px] bg-white/20 mx-1"></div>
+            <span class="text-[9px] tracking-[0.3em] font-bold text-gray-500 uppercase">Bureau of Records</span>
         </div>
-    </div>
-
-    <header class="main-header sticky">
-        <div class="header-container">
-            <div class="logo-area">
-                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Logo" class="main-logo">
-            </div>
-            <nav class="nav-bar">
-                <div class="nav-item dropdown">
-                    <a href="cleaning-solutions.html">Industrial Solutions</a>
-                    <div class="dropdown-menu">
-                        <a href="cleaning-solutions.html">Molecular Agents</a>
-                        <a href="security-intel.html">Signal Hardening</a>
-                        <a href="rd-lab.html">Kinetic Hardware</a>
-                    </div>
-                </div>
-                <a href="compliance-hub.html">Verification Shop</a>
-                <a href="aeah-initiative.html">AEAH Advocacy</a>
-                <a href="investor-relations.html">Governance</a>
-                <a href="contact.html" class="btn-primary-sm">Initialize Audit</a>
-            </nav>
+        <nav class="hidden lg:flex gap-10 text-[10px] font-black uppercase tracking-[0.3em]">
+            <a href="index.html" class="text-gold">Foundation</a>
+            <a href="depository.html" class="nav-link">The Depository</a>
+            <a href="certification-tiers.html" class="nav-link">Certification</a>
+            <a href="non-profits.html" class="nav-link">Social Impact</a>
+        </nav>
+        <div class="flex items-center gap-6">
+            <a href="login.html" class="text-[9px] uppercase font-bold tracking-widest text-gray-400 hover:text-white">Sign In</a>
+            <a href="cart.html" class="bg-gold text-black px-5 py-2 text-[9px] font-black uppercase tracking-widest flex items-center gap-2">
+                Cart <span class="opacity-50">/</span> 0
+            </a>
         </div>
     </header>
 
-    <section class="hero-impact">
-        <div class="hero-bg-visual">
-            
+    <section class="relative min-h-[80vh] flex items-center px-12 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="record_hero.jpg" class="w-full h-full object-cover grayscale">
         </div>
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="badge-outline">Law of Man Verified</span>
-                <h1>Architecting a <br><span class="gradient-text">Clean. Blue. Green.</span> Future.</h1>
-                <p>Clean Blue Green Corp is the world’s first integrated provider of molecular restoration chemicals, vertical-axis kinetic energy, and AEAH-certified signal privacy infrastructure.</p>
-                <div class="hero-actions">
-                    <a href="#marketplace" class="btn-primary-lg">Procurement Portal</a>
-                    <a href="compliance-hub.html" class="btn-secondary-lg">Review EDI Standards</a>
-                </div>
+        <div class="relative z-10 max-w-4xl">
+            <span class="text-gold font-mono text-xs tracking-[0.5em] uppercase mb-4 block">Institutional Record Keeping</span>
+            <h1 class="serif text-6xl md:text-8xl italic leading-tight mb-8">
+                The Definitive Global <br>Infrastructure for Assets.
+            </h1>
+            <p class="text-gray-400 text-xl leading-relaxed max-w-2xl mb-12">
+                Bridging physical proof and digital innovation. Solomon Kin Records ensures every product, person, and piece of IP is protected, broadcasted, and scaled with absolute integrity.
+            </p>
+            <div class="flex gap-6">
+                <a href="certification-tiers.html" class="bg-white text-black px-10 py-5 font-black uppercase tracking-widest text-[11px] hover:bg-gold transition-all">Start Certification</a>
+                <a href="#pillars" class="border border-white/20 px-10 py-5 font-black uppercase tracking-widest text-[11px] hover:bg-white/5 transition-all">The Five Pillars</a>
             </div>
-            <div class="hero-stats">
-                <div class="stat-box">
-                    <span class="stat-num">98%</span>
-                    <span class="stat-lab">VOC Reduction</span>
+        </div>
+    </section>
+
+    <section id="pillars" class="py-32 px-12 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="serif text-5xl italic mb-16">Organizational Architecture</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="p-8 border border-white/5 bg-black">
+                    <span class="text-gold text-[10px] font-bold">01</span>
+                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Registry & Legal</h4>
+                    <p class="text-gray-500 text-[11px]">Physical & digital record keeping.</p>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-num">0.0ns</span>
-                    <span class="stat-lab">Signal Bleed</span>
+                <div class="p-8 border border-white/5 bg-black">
+                    <span class="text-gold text-[10px] font-bold">02</span>
+                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Creative & Talent</h4>
+                    <p class="text-gray-500 text-[11px]">Managing the face of innovation.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-black">
+                    <span class="text-gold text-[10px] font-bold">03</span>
+                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Enterprise & Growth</h4>
+                    <p class="text-gray-500 text-[11px]">B2B Logistics and acquisitions.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-black">
+                    <span class="text-gold text-[10px] font-bold">04</span>
+                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Tech & Infra</h4>
+                    <p class="text-gray-500 text-[11px]">Software and health systems.</p>
+                </div>
+                <div class="p-8 border border-white/5 bg-black">
+                    <span class="text-gold text-[10px] font-bold">05</span>
+                    <h4 class="font-black text-xs uppercase mt-4 mb-2 tracking-widest">Strategy & Culture</h4>
+                    <p class="text-gray-500 text-[11px]">The internal heart of the node.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="marketplace" class="triad-marketplace">
-        <div class="container">
-            <div class="section-intro text-center">
-                <h2>Integrated Infrastructure & Procurement</h2>
-                <p>Strategic tools for the modern industrial sanctuary.</p>
+    <section class="py-32 px-12 bg-black">
+        <div class="max-w-7xl mx-auto text-center mb-20">
+            <h2 class="serif text-5xl italic mb-4">Entrepreneurial Certification</h2>
+            <p class="text-gray-500 uppercase tracking-widest text-[10px]">Verify your level of leadership in the global directory</p>
+        </div>
+        
+        <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
+                <h3 class="font-black text-xl uppercase italic mb-1">Public Kin</h3>
+                <span class="text-gray-600 text-[10px] uppercase font-bold mb-6">Level 01</span>
+                <div class="text-3xl font-black mb-8">FREE</div>
+                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
+                    <li>• Basic Contact Entry</li>
+                    <li>• Directory Category</li>
+                    <li>• Global Public Search</li>
+                </ul>
+                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Register</button>
             </div>
-
-            <div class="marketplace-grid">
-                <div class="m-card">
-                    <div class="card-image"></div>
-                    <div class="card-body">
-                        <span class="category">Molecular Restoration</span>
-                        <h3>CBG-01 Bio-Safe Agent</h3>
-                        <p>Biodegradable industrial concentrate for maritime and heavy-industry decontamination. TAA Compliant.</p>
-                        <div class="pricing">
-                            <span class="amount">$1,250.00</span>
-                            <span class="per">/ 55-Gal Drum</span>
-                        </div>
-                        <a href="cart.html" class="btn-add">Add to Procurement</a>
-                    </div>
-                </div>
-
-                <div class="m-card featured">
-                    <div class="card-image"></div>
-                    <div class="card-body">
-                        <span class="category">Verification Services</span>
-                        <h3>Tier 5 EDI Verification Audit</h3>
-                        <p>Comprehensive forensic assessment of molecular purity and signal harassment vulnerability for government and industrial sites.</p>
-                        <div class="pricing">
-                            <span class="amount">$4,500.00</span>
-                            <span class="per">/ Initial Audit</span>
-                        </div>
-                        <a href="cart.html" class="btn-primary-full">Schedule Audit Now</a>
-                    </div>
-                </div>
-
-                <div class="m-card">
-                    <div class="card-image"></div>
-                    <div class="card-body">
-                        <span class="category">Kinetic Systems</span>
-                        <h3>VAWT-01 Kinetic Module</h3>
-                        <p>Vertical-Axis Wind Turbine for urban/industrial energy capture. High-torque, low-noise footprint.</p>
-                        <div class="pricing">
-                            <span class="amount">$8,900.00</span>
-                            <span class="per">/ Modular Unit</span>
-                        </div>
-                        <a href="cart.html" class="btn-add">Add to Procurement</a>
-                    </div>
-                </div>
+            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
+                <h3 class="font-black text-xl uppercase italic mb-1">Verified Kin</h3>
+                <span class="text-gold text-[10px] uppercase font-bold mb-6">Level 02</span>
+                <div class="text-3xl font-black mb-8">$49<span class="text-xs">/YR</span></div>
+                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
+                    <li>• Owner Professional Bio</li>
+                    <li>• Technology Health Audit</li>
+                    <li>• Verified Badge on Profile</li>
+                </ul>
+                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Upgrade</button>
+            </div>
+            <div class="tier-card border-2 border-gold p-10 flex flex-col items-center bg-white/5 relative">
+                <div class="absolute -top-3 bg-gold text-black text-[9px] font-black px-3 py-1 uppercase tracking-widest">Recommended</div>
+                <h3 class="font-black text-xl uppercase italic mb-1">Pro Kin</h3>
+                <span class="text-gold text-[10px] uppercase font-bold mb-6">Level 03</span>
+                <div class="text-3xl font-black mb-8">$199<span class="text-xs">/YR</span></div>
+                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
+                    <li>• Direct B2B Networking</li>
+                    <li>• IP & Trademark Audit</li>
+                    <li>• Supply Chain Verification</li>
+                </ul>
+                <button class="w-full bg-gold text-black py-3 text-[10px] font-black uppercase tracking-widest">Get Pro Status</button>
+            </div>
+            <div class="tier-card border border-white/10 p-10 flex flex-col items-center">
+                <h3 class="font-black text-xl uppercase italic mb-1">Master Kin</h3>
+                <span class="text-gray-600 text-[10px] uppercase font-bold mb-6">Level 04</span>
+                <div class="text-3xl font-black mb-8">$999<span class="text-xs">/YR</span></div>
+                <ul class="text-[11px] text-gray-400 space-y-4 mb-10 text-left w-full">
+                    <li>• Physical Proof Records</li>
+                    <li>• Acquisition Histories</li>
+                    <li>• Investor-Grade Access</li>
+                </ul>
+                <button class="w-full border border-white/20 py-3 text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-black">Request Audit</button>
             </div>
         </div>
     </section>
 
-    <section class="affiliations">
-        <div class="container">
-            <div class="aff-wrap">
-                <span class="aff-title">Certified Partner Ecosystem:</span>
-                <div class="aff-grid">
-                    <div class="aff-item">SAM.GOV REGISTERED</div>
-                    <div class="aff-item">AEAH.ORG PROTECTED</div>
-                    <div class="aff-item">DHS CISA ALIGNED</div>
-                    <div class="aff-item">EPA GREEN-POWER</div>
-                </div>
+    <footer class="bg-[#050505] border-t border-white/10 px-12 py-20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+            <div>
+                <img src="Solologo.png" class="h-10 mb-6">
+                <p class="text-gray-500 text-xs leading-relaxed">
+                    Solomon Kin Records is a global record keeping company and media group dedicated to the integrity of human and digital assets.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Infrastructure</h5>
+                <ul class="text-gray-400 text-xs space-y-4">
+                    <li><a href="depository.html" class="hover:text-white transition-all">Directory</a></li>
+                    <li><a href="legal.html" class="hover:text-white transition-all">IP Services</a></li>
+                    <li><a href="certification-tiers.html" class="hover:text-white transition-all">Certifications</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Community</h5>
+                <ul class="text-gray-400 text-xs space-y-4">
+                    <li><a href="non-profits.html" class="hover:text-white transition-all">Non-Profit Partners</a></li>
+                    <li><a href="events.html" class="hover:text-white transition-all">Entrepreneur Events</a></li>
+                    <li><a href="mentors.html" class="hover:text-white transition-all">Mentorship Program</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-black uppercase text-[10px] tracking-widest text-gold mb-6">Governance</h5>
+                <ul class="text-gray-400 text-xs space-y-4">
+                    <li><a href="privacy.html" class="hover:text-white transition-all">Privacy Protocol</a></li>
+                    <li><a href="terms.html" class="hover:text-white transition-all">Terms of Service</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-all">Record Inquiry</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer class="institutional-footer">
-        <div class="container footer-top">
-            <div class="footer-col-brand">
-                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Logo" class="footer-logo">
-                <p>The "Law of Man" in physical and digital practice. Leading the global shift to Bio-Digital Restoration.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Operations</h4>
-                <a href="cleaning-solutions.html">Molecular Agents</a>
-                <a href="rd-lab.html">VAWT Engineering</a>
-                <a href="fleet-operations.html">Fleet Dispatch</a>
-                <a href="supply-chain.html">Supply Chain</a>
-            </div>
-            <div class="footer-col">
-                <h4>Governance</h4>
-                <a href="board-governance.html">Board of Directors</a>
-                <a href="ai-governance.html">AI Ethics Policy</a>
-                <a href="compliance-hub.html">EDI Standards</a>
-                <a href="legal-defense.html">Legal Defense</a>
-            </div>
-            <div class="footer-col">
-                <h4>Advocacy</h4>
-                <a href="aeah-initiative.html">AEAH Initiative</a>
-                <a href="community-safety.html">Public Safety</a>
-                <a href="impact-2030.html">2030 Vision</a>
-                <a href="education.html">Education Portal</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container flex-between">
-                <p>&copy; 2026 Clean Blue Green Corp. | DUNS: [REGISTERED] | CAGE: [PENDING]</p>
-                <div class="footer-legal">
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="security-intel.html">Signal Security</a>
-                </div>
-            </div>
+        <div class="max-w-7xl mx-auto pt-10 border-t border-white/5 flex flex-col md:row-reverse md:flex-row justify-between items-center text-[10px] font-mono text-gray-600 uppercase tracking-widest">
+            <div>© 2026 Solomon Kin Records. All Rights Reserved.</div>
+            <div class="mt-4 md:mt-0">Node-01 // Philadelphia, PA</div>
         </div>
     </footer>
 
