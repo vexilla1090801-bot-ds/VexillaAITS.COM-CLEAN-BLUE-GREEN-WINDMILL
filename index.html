@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Blue Green Corp | Official Industrial & Government Portal</title>
+    <title>Clean Blue Green Corp | Primary Industrial & Government Verification Portal</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     
@@ -18,169 +18,232 @@
             --slate: #64748b;
         }
         body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: #ffffff; border-bottom: 2px solid #e2e8f0; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 30px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         .flex-nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo { height: 50px; font-weight: 800; font-size: 1.5rem; color: var(--primary-green); display: flex; align-items: center; gap: 10px; }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: var(--deep-blue); font-weight: 600; transition: 0.3s; }
+        
+        /* LOGO SCALED 4X */
+        .logo-container { display: flex; align-items: center; gap: 20px; }
+        .main-logo { height: 160px; width: auto; transition: transform 0.3s ease; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
+
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; }
         .nav-links a:hover { color: var(--primary-green); }
-        .cta-pill { background: var(--primary-green); color: white !important; padding: 8px 20px; border-radius: 50px; }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
         
-        /* Hero Styling */
-        .hero { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; padding: 100px 0; text-align: center; }
-        .hero h1 { font-size: 3.5rem; margin: 0; font-weight: 800; letter-spacing: -1px; }
-        .hero p { font-size: 1.2rem; max-width: 700px; margin: 20px auto; color: #cbd5e1; }
+        /* HERO SECTION */
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('windmill-array.jpg'); background-size: cover; background-position: center; color: white; padding: 140px 0; text-align: center; }
+        .hero h2 { font-size: 4rem; margin: 0; font-weight: 800; line-height: 1.1; }
+        .hero p { font-size: 1.4rem; max-width: 900px; margin: 25px auto; color: #e2e8f0; font-weight: 300; }
         
-        /* Grid Layouts */
-        .grid-10 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 50px; }
-        .package-card { background: white; border: 1px solid #e2e8f0; padding: 25px; border-radius: 12px; transition: 0.3s; position: relative; overflow: hidden; }
-        .package-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: var(--primary-green); }
-        .tier-label { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-weight: 700; color: var(--primary-green); text-transform: uppercase; }
-        .price { font-size: 1.5rem; font-weight: 800; color: var(--deep-blue); margin: 15px 0; }
-        .btn-buy { width: 100%; padding: 12px; border: none; background: #f1f5f9; color: var(--deep-blue); font-weight: 700; border-radius: 6px; cursor: pointer; transition: 0.3s; }
-        .btn-buy:hover { background: var(--primary-green); color: white; }
+        /* THE 20-TIER GRID */
+        .grid-20 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 60px; }
+        .package-card { background: white; border: 1px solid #cbd5e1; padding: 30px; border-radius: 4px; transition: 0.4s; position: relative; display: flex; flex-direction: column; justify-content: space-between; }
+        .package-card:hover { transform: translateY(-10px); box-shadow: 0 30px 50px rgba(0,0,0,0.1); border-color: var(--electric-blue); }
+        .tier-label { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 800; color: var(--primary-green); display: block; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 5px; }
+        .price { font-size: 1.8rem; font-weight: 900; color: var(--deep-blue); margin: 20px 0; font-family: 'JetBrains Mono'; }
+        .btn-buy { width: 100%; padding: 15px; border: 2px solid var(--deep-blue); background: transparent; color: var(--deep-blue); font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; }
+        .btn-buy:hover { background: var(--deep-blue); color: white; }
+        
+        .featured-tier { border: 2px solid var(--primary-green); background: #f0fdf4; }
     </style>
 </head>
 <body>
 
-    <div style="background: #000; color: #fff; font-size: 12px; padding: 5px 0; text-align: center; font-family: 'JetBrains Mono';">
-        SECURE GATEWAY ENCRYPTION: AES-256 | STATUS: EDI-COMPLIANT
+    <div style="background: var(--primary-green); color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        FEDERAL LOGISTICS IDENTIFIER: CBG-RESTORE-2026 | SIGNAL INTEGRITY ENFORCED
     </div>
 
     <header>
         <div class="container flex-nav">
-            <div class="logo">
-                <img src="CleanBlueGreenCorp.png" alt="Clean Blue Green Corp" style="height: 40px;">
-                <span>CBG <span style="font-weight:300">CORP</span></span>
+            <div class="logo-container">
+                <img src="CleanBlueGreenCorp.png" alt="CleanBlueGreenCorp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
             <nav class="nav-links">
-                <a href="rd-lab.html">Research</a>
-                <a href="compliance-hub.html">Verification</a>
-                <a href="aeah-initiative.html">Advocacy</a>
-                <a href="login.html">Sign In</a>
-                <a href="register.html" class="cta-pill">Join Network</a>
+                <a href="rd-lab.html">Kinetic R&D</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="login.html">Portal Login</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <span style="color: var(--electric-blue); font-weight: 700; letter-spacing: 2px;">ENVIRONMENTAL & SIGNAL STEWARDSHIP</span>
-            <h1>Restoring the <span style="color: #4ade80;">Law of Man</span>.</h1>
-            <p>From proprietary VAWT windmill technology to molecular-grade forensic audits, we provide the gold standard for government and industrial certification.</p>
-            <div style="margin-top: 30px;">
-                <a href="#packages" class="cta-pill" style="padding: 15px 40px; font-size: 1.1rem;">Explore Verification Packages</a>
-            </div>
+            <span style="color: var(--electric-blue); font-weight: 800; letter-spacing: 4px; text-transform: uppercase;">The Global Standard in Molecular & Signal Security</span>
+            <h2>Defending the <span style="color: #4ade80;">Law of Man</span> through Science.</h2>
+            <p>We provide the world’s most rigorous verification framework. From vertical-axis wind turbine efficiency to deep-spectral signal forensics, our 20-tier system ensures your facility is a sovereign sanctuary.</p>
         </div>
     </section>
 
     
 
-    <section id="packages" style="padding: 80px 0;">
+    <section style="padding: 100px 0;">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 50px;">
-                <h2 style="font-size: 2.5rem; font-weight: 800;">Official Certification Tiers</h2>
-                <p style="color: var(--slate);">Select the forensic audit required for your facility's EDI-status or government compliance.</p>
+            <div style="text-align: left; border-left: 8px solid var(--primary-green); padding-left: 30px; margin-bottom: 60px;">
+                <h2 style="font-size: 3rem; font-weight: 900; margin: 0;">Institutional Certification Tiers</h2>
+                <p style="font-size: 1.2rem; color: var(--slate); max-width: 800px;">Our proprietary EDI (Environmental-Digital Integrity) audits are recognized by SAM.gov partners and AEAH auditors as the final word in site restoration.</p>
             </div>
 
-            <div class="grid-10">
+            <div class="grid-20">
                 <div class="package-card">
                     <span class="tier-label">Tier 01: VOC Baseline</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Basic surface purity and chemical residue assessment.</p>
+                    <p>Surface molecular scan for industrial hydrocarbon residue.</p>
                     <div class="price">$850.00</div>
-                    <button class="btn-buy">Add to Cart</button>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 02: Soil Toxicity</span>
+                    <p>Deep-core analysis for heavy metal and chemical leaching.</p>
+                    <div class="price">$1,450.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 03: Particulate Flux</span>
+                    <p>Aerosolized toxin monitoring and air-scrubbing efficiency.</p>
+                    <div class="price">$1,900.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 04: Kinetic Staging</span>
+                    <p>VAWT placement assessment and wind-flow optimization.</p>
+                    <div class="price">$2,200.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+
+                <div class="package-card featured-tier">
+                    <span class="tier-label">Tier 05: EMF Mapping</span>
+                    <p>Standard radio-frequency and grid-noise mitigation sweep.</p>
+                    <div class="price">$2,800.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card featured-tier">
+                    <span class="tier-label">Tier 06: Signal Trespass</span>
+                    <p>Forensic detection of unauthorized pulsed microwave emissions.</p>
+                    <div class="price">$3,500.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card featured-tier">
+                    <span class="tier-label">Tier 07: Faraday Hardening</span>
+                    <p>Validation of physical shielding and signal-safe zones.</p>
+                    <div class="price">$5,200.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card featured-tier">
+                    <span class="tier-label">Tier 08: Bio-Digital Sync</span>
+                    <p>Comprehensive audit of human bio-rhythms vs site signal noise.</p>
+                    <div class="price">$6,800.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
                 </div>
 
                 <div class="package-card">
-                    <span class="tier-label">Tier 02: EMF Standard</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Standard radio-frequency and grid-noise mapping.</p>
-                    <div class="price">$1,200.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card" style="border-top: 4px solid var(--electric-blue);">
-                    <span class="tier-label">Tier 03: Signal Defense</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Forensic scan for pulsed microwave trespass.</p>
-                    <div class="price">$2,500.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card">
-                    <span class="tier-label">Tier 04: Kinetic Audit</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Efficiency assessment for VAWT turbine integration.</p>
-                    <div class="price">$1,850.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card">
-                    <span class="tier-label">Tier 05: Port Integrity</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Maritime-grade runoff and chemical audit.</p>
-                    <div class="price">$3,400.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card">
-                    <span class="tier-label">Tier 06: Data Sanctuary</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Security audit for air-gapped server environments.</p>
-                    <div class="price">$4,800.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card">
-                    <span class="tier-label">Tier 07: AEAH Standard</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Humanitarian-grade signal safety certification.</p>
-                    <div class="price">$6,000.00</div>
-                    <button class="btn-buy">Add to Cart</button>
-                </div>
-
-                <div class="package-card">
-                    <span class="tier-label">Tier 08: GSA Gov-Prep</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Pre-contract verification for SAM.gov entities.</p>
+                    <span class="tier-label">Tier 09: Port Compliance</span>
+                    <p>Maritime-grade chemical runoff and hull-agent verification.</p>
                     <div class="price">$7,500.00</div>
-                    <button class="btn-buy">Add to Cart</button>
+                    <button class="btn-buy">Initialize Audit</button>
                 </div>
-
-                <div class="package-card" style="background: var(--deep-blue); color: white;">
-                    <span class="tier-label" style="color: #4ade80;">Tier 09: Sovereign Shield</span>
-                    <p style="font-size: 0.9rem; color: #94a3b8;">Highest-tier signal and molecular defense suite.</p>
-                    <div class="price" style="color: white;">$12,500.00</div>
-                    <button class="btn-buy" style="background: var(--primary-green); border: none; color: white;">Add to Cart</button>
+                <div class="package-card">
+                    <span class="tier-label">Tier 10: GSA Alignment</span>
+                    <p>Pre-contractual verification for Federal Procurement Officers.</p>
+                    <div class="price">$8,200.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 11: Supply Chain DNA</span>
+                    <p>Forensic tracing of TAA-compliant raw material sourcing.</p>
+                    <div class="price">$9,400.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 12: Fleet Logistics</span>
+                    <p>Environmental impact audit for mobile response fleets.</p>
+                    <div class="price">$10,500.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
                 </div>
 
                 <div class="package-card">
-                    <span class="tier-label">Tier 10: Global Enterprise</span>
-                    <p style="font-size: 0.9rem; color: var(--slate);">Multi-site international infrastructure audit.</p>
-                    <div class="price">Contact Us</div>
-                    <button class="btn-buy">Request Quote</button>
+                    <span class="tier-label">Tier 13: Acoustic Purity</span>
+                    <p>Low-frequency vibration and industrial noise pollution audit.</p>
+                    <div class="price">$4,200.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 14: Dark-Fiber Security</span>
+                    <p>Physical verification of air-gapped data transmission lines.</p>
+                    <div class="price">$12,000.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 15: AI-Stewardship</span>
+                    <p>Algorithmic bias and safety audit for facility-management AI.</p>
+                    <div class="price">$15,000.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+                <div class="package-card">
+                    <span class="tier-label">Tier 16: Satellite Forensics</span>
+                    <p>Orbital mapping of ground-level signal harassment sources.</p>
+                    <div class="price">$18,500.00</div>
+                    <button class="btn-buy">Initialize Audit</button>
+                </div>
+
+                <div class="package-card" style="background: #0f172a; color: white;">
+                    <span class="tier-label" style="color: #4ade80;">Tier 17: AEAH Shield</span>
+                    <p>Full humanitarian-grade protection for high-risk signal victims.</p>
+                    <div class="price" style="color:white;">$25,000.00</div>
+                    <button class="btn-buy" style="border-color:#4ade80; color:#4ade80;">Select Premium</button>
+                </div>
+                <div class="package-card" style="background: #0f172a; color: white;">
+                    <span class="tier-label" style="color: #4ade80;">Tier 18: Sovereign Sanctuary</span>
+                    <p>Legal-technical verification of a total air-gapped environment.</p>
+                    <div class="price" style="color:white;">$40,000.00</div>
+                    <button class="btn-buy" style="border-color:#4ade80; color:#4ade80;">Select Premium</button>
+                </div>
+                <div class="package-card" style="background: #0f172a; color: white;">
+                    <span class="tier-label" style="color: #4ade80;">Tier 19: Global Restoration</span>
+                    <p>Multi-national infrastructure audit and kinetic overhaul.</p>
+                    <div class="price" style="color:white;">$75,000.00</div>
+                    <button class="btn-buy" style="border-color:#4ade80; color:#4ade80;">Select Premium</button>
+                </div>
+                <div class="package-card" style="background: #0f172a; color: white;">
+                    <span class="tier-label" style="color: #4ade80;">Tier 20: The Law of Man</span>
+                    <p>The ultimate verification of planetary-grade integrity and health.</p>
+                    <div class="price" style="color:white;">Custom Quote</div>
+                    <button class="btn-buy" style="border-color:#4ade80; color:#4ade80;">Inquire</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer style="background: #0f172a; color: white; padding: 60px 0; border-top: 5px solid var(--primary-green);">
-        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div style="flex: 1; min-width: 250px;">
-                <img src="Clean Blue Green Corp.png" alt="Logo" style="height: 40px; margin-bottom: 20px;">
-                <p style="color: #94a3b8;">Protecting the Bio-Digital frontier through kinetic innovation and the Law of Man. SAM.gov Active.</p>
+    <footer style="background: #000; color: white; padding: 100px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 60px;">
+            <div style="flex: 1; min-width: 350px;">
+                <img src="Clean Blue Green Corp.png" alt="Official Logo" style="height: 120px; margin-bottom: 30px;">
+                <p style="color: #94a3b8; font-size: 1.1rem;">Architecting a cleaner, safer, and more sovereign world through kinetic mastery and molecular stewardship. We are the guardians of the Law of Man.</p>
             </div>
-            <nav style="display: flex; gap: 50px;">
-                <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <strong>Navigation</strong>
-                    <a href="impact-2030.html" style="color: #94a3b8; text-decoration: none;">2030 Vision</a>
-                    <a href="legal-defense.html" style="color: #94a3b8; text-decoration: none;">Legal Defense</a>
+            <nav style="display: flex; gap: 80px;">
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <strong style="color: var(--primary-green);">DEPARTMENTS</strong>
+                    <a href="rd-lab.html" style="color: #cbd5e1; text-decoration: none;">Kinetic R&D</a>
+                    <a href="impact-2030.html" style="color: #cbd5e1; text-decoration: none;">2030 Roadmap</a>
+                    <a href="legal-defense.html" style="color: #cbd5e1; text-decoration: none;">Legal Counsel</a>
                 </div>
-                <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <strong>Governance</strong>
-                    <a href="ai-governance.html" style="color: #94a3b8; text-decoration: none;">AI Ethics</a>
-                    <a href="board-governance.html" style="color: #94a3b8; text-decoration: none;">Board Members</a>
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <strong style="color: var(--primary-green);">GOVERNANCE</strong>
+                    <a href="ai-governance.html" style="color: #cbd5e1; text-decoration: none;">Ethics & AI</a>
+                    <a href="board-governance.html" style="color: #cbd5e1; text-decoration: none;">The Board</a>
+                    <a href="compliance-hub.html" style="color: #cbd5e1; text-decoration: none;">EDI Protocols</a>
                 </div>
             </nav>
         </div>
-        <div style="text-align: center; padding-top: 40px; border-top: 1px solid #1e293b; margin-top: 40px; color: #475569; font-size: 0.8rem;">
-            &copy; 2026 Clean Blue Green Corp. | DUNS: [REGISTERED] | CAGE: [PENDING]
+        <div style="text-align: center; padding-top: 60px; border-top: 1px solid #334155; margin-top: 60px; color: #64748b; font-size: 0.9rem;">
+            &copy; 2026 Clean Blue Green Corp. | ALL RIGHTS RESERVED | TAA COMPLIANT | SAM.GOV STATUS: ACTIVE
         </div>
     </footer>
 
 </body>
 </html>
-
