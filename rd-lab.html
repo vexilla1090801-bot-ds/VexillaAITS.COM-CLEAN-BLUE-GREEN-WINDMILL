@@ -3,85 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R&D Lab | Clean Blue Green Corp Engineering</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
-</head>
-<body class="rd-page">
+    <title>Kinetic R&D | Clean Blue Green Corp Engineering Division</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* LOCKED HEADER (Identical to Index) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary-green); }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* ENGINEERING CONTENT */
+        .lab-hero { background: var(--deep-blue); color: white; padding: 100px 0; }
+        .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 100px 0; align-items: center; }
+        
+        .spec-box { background: white; border: 1px solid #cbd5e1; padding: 40px; border-radius: 4px; }
+        .spec-box h3 { border-bottom: 2px solid var(--primary-green); padding-bottom: 10px; margin-bottom: 20px; font-size: 1.8rem; }
+        
+        .data-table { width: 100%; border-collapse: collapse; font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+        .data-table tr { border-bottom: 1px solid #f1f5f9; }
+        .data-table td { padding: 12px 0; }
+        .data-table td:last-child { text-align: right; font-weight: 700; color: var(--primary-green); }
+
+        .feature-callout { background: #f0fdf4; padding: 30px; border-left: 5px solid var(--primary-green); margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <div style="background: var(--primary-green); color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        KINETIC SYSTEMS R&D: VAWT MODULE ALPHA-7 | TESTING STATUS: OPERATIONAL
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="infrastructure.html">Infrastructure</a>
-                <a href="rd-lab.html" class="active">R&D Lab</a>
-                <a href="compliance-hub.html">Compliance</a>
-                <a href="contact.html" class="cta-nav">Partner with R&D</a>
+            <nav class="nav-links">
+                <a href="index.html">Hub</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="login.html">Portal</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
-    <section class="rd-hero">
+    <section class="lab-hero">
         <div class="container">
-            <span class="badge">Experimental Engineering</span>
-            <h1>Hardware for a <span class="highlight">Bio-Digital Age</span></h1>
-            <p>Where the "Law of Man" meets the laws of physics. We are prototyping the next generation of kinetic energy capture and signal-privacy shielding.</p>
+            <h2 style="font-size: 3.5rem; font-weight: 800; margin: 0;">Kinetic <span style="color:#4ade80">Autonomy</span></h2>
+            <p style="font-size: 1.4rem; color: #94a3b8; max-width: 800px;">Engineering the future of localized energy. Our Vertical-Axis Wind Turbines (VAWT) provide high-torque power generation with zero signal interference and a minimal environmental footprint.</p>
         </div>
     </section>
 
-    <section class="tech-prototypes">
-        <div class="container">
-            
-            
-            <div class="proto-row">
-                <div class="proto-text">
-                    <h2>VAWT: Vertical-Axis Kinetic Capture</h2>
-                    <p>Traditional windmills are inefficient in urban environments. Our VAWT systems are designed for high-density placement on server farms and industrial rooftops, capturing multi-directional "vampire winds" to power EDI-certified nodes.</p>
-                    <ul class="proto-specs">
-                        <li><strong>Low-Noise Profile:</strong> Optimized for municipal compliance.</li>
-                        <li><strong>Avian-Safe:</strong> Enclosed blade geometry prevents wildlife impact.</li>
-                        <li><strong>Scalability:</strong> Modular units that daisy-chain for industrial output.</li>
-                    </ul>
+    <div class="container">
+        <section class="spec-grid">
+            <div class="spec-visual">
+                
+                <div class="feature-callout">
+                    <strong>Zero-Interference Blade Geometry</strong>
+                    <p>Proprietary carbon-fiber weave prevents radar cross-section (RCS) anomalies, ensuring the turbine does not interfere with Tier 06 Signal Audits.</p>
                 </div>
             </div>
 
-            <hr class="rd-divider">
-
-            
-            <div class="proto-row rev">
-                <div class="proto-text">
-                    <h2>Bio-Metric Shielding & Signal Isolation</h2>
-                    <p>In partnership with <strong>AEAH.org</strong>, our lab is developing a new class of conductive industrial coatings that passively block unauthorized signal intrusion (Electronic Harassment) without interfering with internal hardware performance.</p>
-                    <ul class="proto-specs">
-                        <li><strong>Graphene-Based:</strong> High-efficiency EMF attenuation.</li>
-                        <li><strong>Industrial Integration:</strong> Can be applied as a paint or integrated into construction materials.</li>
-                        <li><strong>AEAH Verified:</strong> The gold standard for "Signal-Safe" workspaces.</li>
-                    </ul>
-                </div>
+            <div class="spec-box">
+                <h3>VAWT-01 Module Specs</h3>
+                <table class="data-table">
+                    <tr><td>ROTOR HEIGHT</td><td>4.2 Meters</td></tr>
+                    <tr><td>SWEPT AREA</td><td>12.5 m²</td></tr>
+                    <tr><td>CUT-IN WIND SPEED</td><td>2.5 m/s</td></tr>
+                    <tr><td>PEAK KINETIC OUTPUT</td><td>5.5 kW per Module</td></tr>
+                    <tr><td>NOISE EMISSION</td><td>< 35 dB (Silent Operation)</td></tr>
+                    <tr><td>SIGNAL TRANSPARENCY</td><td>100% (Non-Conductive)</td></tr>
+                    <tr><td>MAINTENANCE CYCLE</td><td>36 Months</td></tr>
+                </table>
+                <a href="compliance-hub.html" class="cta-pill" style="display: block; text-align: center; margin-top: 30px; text-decoration: none;">Request Kinetic Staging Audit (Tier 04)</a>
             </div>
+        </section>
+    </div>
 
-        </div>
-    </section>
-
-    <section class="lab-logs">
-        <div class="container">
-            <h3>Active Prototype Ledger</h3>
-            <div class="log-terminal">
-                <p class="mono-line">[LOG-088] VAWT Alpha-4: Rotation achieved at 3m/s wind speed. Efficiency +12%.</p>
-                <p class="mono-line">[LOG-089] SHIELD-Beta: Attenuation testing complete in 5GHz range. Zero bleed detected.</p>
-                <p class="mono-line">[LOG-090] INTEGRATION: Testing kinetic-to-blockchain power handoff for TIER-20 Node.</p>
-                <p class="mono-line cursor">_</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Kinetic Systems Division</p>
+    <footer style="background: #000; color: white; padding: 80px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Clean Blue Green Corp. | Kinetic Engineering Division | All Designs Proprietary.</p>
         </div>
     </footer>
 
