@@ -3,98 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliance Hub | Clean Blue Green Corp Protocols</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
-</head>
-<body class="compliance-page">
+    <title>Verification Shop | Clean Blue Green Corp Compliance Hub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* PERSISTENT HEADER (Matches Index EXACTLY) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary-green); }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* CATALOG LAYOUT */
+        .catalog-hero { background: #f1f5f9; padding: 60px 0; border-bottom: 1px solid #e2e8f0; }
+        .tier-section { padding: 80px 0; }
+        .tier-group-title { font-size: 2rem; font-weight: 800; margin-bottom: 40px; padding-bottom: 10px; border-bottom: 4px solid var(--primary-green); display: inline-block; }
+
+        .catalog-grid { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .catalog-item { background: white; border: 1px solid #cbd5e1; border-radius: 4px; display: flex; overflow: hidden; transition: 0.3s; }
+        .catalog-item:hover { border-color: var(--electric-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        .item-spec { padding: 40px; flex: 1; }
+        .item-price-action { width: 300px; background: #f8fafc; border-left: 1px solid #e2e8f0; padding: 40px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+
+        .tier-tag { font-family: 'JetBrains Mono'; color: var(--primary-green); font-weight: 700; font-size: 0.9rem; }
+        .item-spec h3 { font-size: 1.8rem; margin: 10px 0; font-weight: 800; }
+        .item-spec p { color: var(--slate); font-size: 1.1rem; }
+        .benefit-list { list-style: none; padding: 0; margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .benefit-list li { font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        .benefit-list li::before { content: '✓'; color: var(--primary-green); font-weight: 900; }
+
+        .price-display { font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); margin-bottom: 20px; font-family: 'JetBrains Mono'; }
+        .btn-procure { background: var(--deep-blue); color: white; border: none; padding: 15px; border-radius: 4px; font-weight: 800; cursor: pointer; text-transform: uppercase; }
+        .btn-procure:hover { background: var(--primary-green); }
+    </style>
+</head>
+<body>
+
+    <div style="background: var(--primary-green); color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        VERIFICATION CATALOG V.2.0 | ALL TIERS CURRENTLY AVAILABLE FOR SCHEDULING
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="verification-tiers.html">Verifications</a>
-                <a href="compliance-hub.html" class="active">Compliance</a>
-                <a href="recruitment.html">Workforce</a>
-                <a href="contact.html" class="cta-nav">Client Login</a>
+            <nav class="nav-links">
+                <a href="index.html">The Hub</a>
+                <a href="rd-lab.html">Kinetic R&D</a>
+                <a href="login.html">Login</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
-    <section class="compliance-hero">
+    <section class="catalog-hero">
         <div class="container">
-            <span class="badge">Governance & Standards</span>
-            <h1>The <span class="highlight">Blue-Green Protocols</span></h1>
-            <p>Transparency is the foundation of stewardship. Access our proprietary auditing frameworks, chemical safety thresholds, and AEAH-aligned digital ethics policies.</p>
+            <h2 style="font-size: 3rem; font-weight: 900; margin: 0;">Compliance <span style="color:var(--primary-green)">Marketplace</span></h2>
+            <p style="font-size: 1.2rem; color: var(--slate); max-width: 800px;">Direct procurement of forensic audits and certification tiers for industrial stakeholders and government entities.</p>
         </div>
     </section>
 
-    <section class="policy-section">
+    <section class="tier-section">
         <div class="container">
-            <div class="policy-grid">
+            
+            <h2 class="tier-group-title">Sovereign & Advanced Tiers</h2>
+
+            <div class="catalog-grid">
                 
-                <div class="policy-card">
-                    <div class="policy-tag">Protocol CBG-01-A</div>
-                    <h3>Molecular Purity Standards</h3>
-                    <p>Defines the acceptable Parts Per Million (PPM) for volatile organic compounds in industrial cleaning environments.</p>
-                    <a href="#" class="download-link">View Framework (PDF)</a>
-                </div>
-
-                <div class="policy-card">
-                    <div class="policy-tag">Protocol AEAH-05-D</div>
-                    <h3>Signal Intrusion & EMF Mitigation</h3>
-                    <p>The technical standard for auditing "Signal-Safe" environments to prevent electronic harassment and signal abuse.</p>
-                    <a href="#" class="download-link">View Framework (PDF)</a>
-                </div>
-
-                <div class="policy-card">
-                    <div class="policy-tag">Protocol INFRA-08-B</div>
-                    <h3>Renewable Node Lifecycle</h3>
-                    <p>Operational requirements for blockchain data farms seeking the "Carbon-Neutral Node" EDI certification.</p>
-                    <a href="#" class="download-link">View Framework (PDF)</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="legal-framework">
-        <div class="container">
-            <div class="framework-box">
-                <h2>Jurisdictional Philosophy</h2>
-                <p class="mono-text">"Where Technology laws fail to protect the Human Environment, Clean Blue Green Corp enforces the Standard of Man."</p>
-                <div class="legal-columns">
-                    <div class="col">
-                        <h4>Environmental Law</h4>
-                        <p>Aligning S-Corp operations with EPA Section 40 CFR to ensure industrial compliance across all 50 states.</p>
+                <div class="catalog-item">
+                    <div class="item-spec">
+                        <span class="tier-tag">TIER 20 | THE LAW OF MAN</span>
+                        <h3>Full Planetary Integrity Audit</h3>
+                        <p>Our most comprehensive verification protocol. A total site overhaul covering deep-core molecular cleansing, kinetic autonomy, and absolute signal-gap security.</p>
+                        <ul class="benefit-list">
+                            <li>Satellite-Grade Forensics</li>
+                            <li>VAWT Grid Integration</li>
+                            <li>AEAH Legal Certification</li>
+                            <li>Total Faraday Validation</li>
+                            <li>Bio-Rhythm Calibration</li>
+                            <li>Zero-VOC Documentation</li>
+                        </ul>
                     </div>
-                    <div class="col">
-                        <h4>Digital Ethics</h4>
-                        <p>In collaboration with AEAH.org, we define "Digital Trespass" and "Electronic Harassment" as environmental pollutants.</p>
+                    <div class="item-price-action">
+                        <div class="price-display">QUOTE</div>
+                        <button class="btn-procure">Inquire for Contract</button>
+                        <p style="font-size: 0.7rem; color: var(--slate); margin-top: 15px;">SAM.GOV PRE-REQUISITE REQUIRED</p>
                     </div>
                 </div>
+
+                <div class="catalog-item">
+                    <div class="item-spec">
+                        <span class="tier-tag">TIER 17 | HUMANITARIAN PROTECTION</span>
+                        <h3>AEAH Shield Audit</h3>
+                        <p>Specialized forensic audit designed for high-risk signal harassment environments. Includes physical shielding recommendations and spectral noise neutralization.</p>
+                        <ul class="benefit-list">
+                            <li>RF Purity Mapping</li>
+                            <li>Shielding Effectiveness</li>
+                            <li>Legal-Forensic Report</li>
+                            <li>Medical-Digital Alignment</li>
+                        </ul>
+                    </div>
+                    <div class="item-price-action">
+                        <div class="price-display">$25,000</div>
+                        <button class="btn-procure">Add to Procurement</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="item-spec">
+                        <span class="tier-tag">TIER 10 | FEDERAL ALIGNMENT</span>
+                        <h3>GSA Compliance Review</h3>
+                        <p>Verification services specifically for government contractors to meet the 2026 Blue-Green environmental and signal standards.</p>
+                        <ul class="benefit-list">
+                            <li>TAA Supply Chain Trace</li>
+                            <li>EPA Runoff Verification</li>
+                            <li>DHS Signal Compliance</li>
+                            <li>CAGE/DUNS Integration</li>
+                        </ul>
+                    </div>
+                    <div class="item-price-action">
+                        <div class="price-display">$8,200</div>
+                        <button class="btn-procure">Add to Procurement</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="data-integrity">
-        <div class="container">
-            <h3>Verification Blockchain</h3>
-            <p>Every EDI Certification issued by Clean Blue Green Corp is logged on our private ledger for immutable verification. Clients can verify their status via CAGE code or EDI ID.</p>
-            <div class="fake-ledger">
-                <div class="ledger-line"><span>[2026-03-12]</span> <span>TXN_8829...</span> <span>TIER_05 ISSUED</span> <span>REGION: NE</span></div>
-                <div class="ledger-line"><span>[2026-03-11]</span> <span>TXN_8828...</span> <span>TIER_01 ISSUED</span> <span>REGION: SW</span></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Proprietary Compliance Systems</p>
+    <footer style="background: #000; color: white; padding: 80px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Clean Blue Green Corp. | All Procurement Governed by CBG-Standard Protocol.</p>
         </div>
     </footer>
 
