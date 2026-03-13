@@ -1153,3 +1153,62 @@
     padding: 80px 0;
     background: #f0fdf4;
 }
+/* AI Governance Styles */
+.ai-hero {
+    background: #020617;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.ai-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.ai-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--accent-green);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.hitl-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.hitl-list {
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+.hitl-list li {
+    padding: 15px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-green);
+    font-weight: 600;
+}
+
+.standard-badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.s-badge {
+    padding: 10px 20px;
+    background: var(--dark-slate);
+    color: white;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
