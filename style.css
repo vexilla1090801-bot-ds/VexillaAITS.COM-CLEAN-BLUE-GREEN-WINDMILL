@@ -604,3 +604,63 @@
     padding: 20px;
     background: #f9fbf9;
 }
+/* Portfolio Styling */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.case-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.case-card:hover { transform: translateY(-5px); }
+
+.case-image {
+    height: 200px;
+    background: var(--accent-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+}
+
+.case-content { padding: 30px; }
+
+.case-tag {
+    background: var(--electric-blue);
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.case-stats {
+    list-style: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9fbf9;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.map-placeholder {
+    height: 400px;
+    background: var(--dark-slate);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-green);
+    margin-top: 40px;
+}
