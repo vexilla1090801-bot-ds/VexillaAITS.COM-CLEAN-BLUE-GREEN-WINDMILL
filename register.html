@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Enrollment | Clean Blue Green Corp Institutional Portal</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* PERSISTENT HEADER (Matches Index) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
+
+        /* ENROLLMENT FORM LAYOUT */
+        .enrollment-section { padding: 100px 0; display: flex; justify-content: center; }
+        .enrollment-card { background: white; width: 100%; max-width: 800px; border: 1px solid #cbd5e1; border-radius: 4px; padding: 60px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        
+        .section-intro { border-left: 5px solid var(--primary-green); padding-left: 20px; margin-bottom: 40px; }
+        .section-intro h2 { font-size: 2.5rem; font-weight: 800; margin: 0; }
+        .section-intro p { color: var(--slate); font-size: 1.1rem; }
+
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .full-width { grid-column: span 2; }
+
+        label { display: block; font-weight: 700; margin-bottom: 8px; color: var(--deep-blue); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        input, select, textarea { width: 100%; padding: 15px; border: 1px solid #cbd5e1; border-radius: 4px; box-sizing: border-box; font-family: 'Outfit', sans-serif; font-size: 1rem; }
+        input:focus { outline: 2px solid var(--electric-blue); border-color: transparent; }
+
+        .form-footer { margin-top: 40px; padding-top: 30px; border-top: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; }
+        .btn-submit { background: var(--primary-green); color: white; border: none; padding: 18px 40px; border-radius: 4px; font-weight: 800; font-size: 1.1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-submit:hover { background: #1e3d1a; }
+
+        .security-notice { font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--slate); display: flex; align-items: center; gap: 10px; }
+        .dot { height: 8px; width: 8px; background: #4ade80; border-radius: 50%; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <div style="background: var(--primary-green); color: #fff; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 700;">
+        ENROLLMENT GATEWAY: SECURE SESSION INITIALIZED | AES-256 ACTIVE
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" style="margin-left:0; text-decoration: none; color: var(--deep-blue); font-weight: 700;">&larr; Return to Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="enrollment-section">
+        <div class="enrollment-card">
+            <div class="section-intro">
+                <h2>Entity Registration</h2>
+                <p>Initialize your corporate or government profile to begin 20-Tier EDI verification and kinetic auditing.</p>
+            </div>
+
+            <form action="#" class="form-grid">
+                <div>
+                    <label>Full Legal Name / Officer Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label>Organization / Entity Name</label>
+                    <input type="text" placeholder="Industrial Solutions LLC" required>
+                </div>
+                <div class="full-width">
+                    <label>Corporate / Government Email Address</label>
+                    <input type="email" placeholder="officer@entity.gov" required>
+                </div>
+                <div>
+                    <label>Assigned Facility Postal Code</label>
+                    <input type="text" placeholder="10001">
+                </div>
+                <div>
+                    <label>Interested Tier of Verification</label>
+                    <select>
+                        <option>Tier 01: VOC Baseline</option>
+                        <option>Tier 05: EMF Mapping</option>
+                        <option>Tier 06: Signal Trespass</option>
+                        <option>Tier 10: GSA Alignment</option>
+                        <option>Tier 17: AEAH Shield</option>
+                        <option>Tier 20: The Law of Man</option>
+                    </select>
+                </div>
+                <div class="full-width">
+                    <label>Initial Site Description / Security Concerns</label>
+                    <textarea rows="4" placeholder="Briefly describe the facility footprint or current signal/environmental concerns..."></textarea>
+                </div>
+
+                <div class="full-width form-footer">
+                    <div class="security-notice">
+                        <span class="dot"></span> 
+                        ENCRYPTION: 256-BIT RSA VERIFIED
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Enrollment</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background: #000; color: white; padding: 60px 0; border-top: 5px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p style="color: #64748b; font-size: 0.9rem;">&copy; 2026 Clean Blue Green Corp. | Institutional Enrollment Division | TAA COMPLIANT</p>
+        </div>
+    </footer>
+
+</body>
+</html>
