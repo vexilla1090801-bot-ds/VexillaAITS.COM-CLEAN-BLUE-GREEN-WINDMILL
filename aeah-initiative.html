@@ -3,100 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The AEAH Initiative | Bio-Digital Advocacy</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-</head>
-<body class="advocacy-page">
+    <title>AEAH Initiative | Clean Blue Green Corp Humanitarian Advocacy</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #2d5a27;
+            --deep-blue: #0f172a;
+            --wind-white: #f8fafc;
+            --electric-blue: #3b82f6;
+            --slate: #64748b;
+            --gold: #d4af37;
+        }
+        body { margin: 0; font-family: 'Outfit', sans-serif; background: var(--wind-white); color: var(--deep-blue); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        /* LOCKED HEADER (Identical to Index) */
+        header { background: #ffffff; border-bottom: 3px solid var(--primary-green); padding: 20px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .flex-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; }
+        .logo-container { display: flex; align-items: center; gap: 20px; flex-shrink: 0; }
+        .main-logo { height: 160px; width: auto; }
+        .brand-titles h1 { margin: 0; font-size: 2.2rem; font-weight: 900; color: var(--deep-blue); letter-spacing: -1px; white-space: nowrap; }
+        .brand-titles p { margin: 0; font-family: 'JetBrains Mono'; color: var(--primary-green); font-size: 0.9rem; font-weight: 700; }
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <div class="logo-box">CBG</div>
-                <span class="brand-name">Clean Blue Green <span class="corp">Corp</span></span>
+        .nav-links { display: flex; align-items: center; flex-shrink: 0; }
+        .nav-links a { margin-left: 25px; text-decoration: none; color: var(--deep-blue); font-weight: 700; font-size: 1.1rem; transition: 0.3s; white-space: nowrap; }
+        .nav-links a:hover { color: var(--primary-green); }
+        .cta-pill { background: var(--primary-green); color: white !important; padding: 12px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* ADVOCACY CONTENT */
+        .advocacy-hero { background: linear-gradient(rgba(45, 90, 39, 0.9), rgba(45, 90, 39, 0.9)), url('earth-shield.jpg'); color: white; padding: 120px 0; text-align: center; }
+        .law-section { padding: 100px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        
+        .manifesto-box { background: white; border-top: 10px solid var(--gold); padding: 50px; border-radius: 4px; box-shadow: 0 30px 60px rgba(0,0,0,0.05); }
+        .manifesto-box h3 { font-size: 2.2rem; margin-bottom: 20px; color: var(--deep-blue); }
+        
+        .pillar-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .pillar-card { border: 1px solid #e2e8f0; padding: 25px; border-radius: 4px; }
+        .pillar-card h4 { color: var(--primary-green); margin-bottom: 10px; font-weight: 800; }
+    </style>
+</head>
+<body>
+
+    <div style="background: var(--gold); color: #000; font-size: 13px; padding: 8px 0; text-align: center; font-family: 'JetBrains Mono'; font-weight: 900;">
+        ADVOCACY STATUS: GLOBAL OUTREACH ACTIVE | PROTECTING HUMAN BIO-INTEGRITY
+    </div>
+
+    <header>
+        <div class="container flex-nav">
+            <div class="logo-container">
+                <img src="Clean Blue Green Corp.png" alt="Clean Blue Green Corp Official Logo" class="main-logo">
+                <div class="brand-titles">
+                    <h1>Clean Blue Green <span style="color:var(--primary-green)">Corp.</span></h1>
+                    <p>BIO-DIGITAL INFRASTRUCTURE & KINETIC RESTORATION</p>
+                </div>
             </div>
-            <nav class="nav-bar">
-                <a href="index.html">Home</a>
-                <a href="verification-tiers.html">Verifications</a>
-                <a href="investor-relations.html">Impact</a>
-                <a href="aeah-initiative.html" class="active">AEAH Advocacy</a>
-                <a href="donate.html" class="cta-nav">Donate to AEAH</a>
+            <nav class="nav-links">
+                <a href="index.html">The Hub</a>
+                <a href="compliance-hub.html">Verification Shop</a>
+                <a href="security-intel.html">Signal Defense</a>
+                <a href="register.html" class="cta-pill">Secure Enrollment</a>
             </nav>
         </div>
     </header>
 
     <section class="advocacy-hero">
         <div class="container">
-            <span class="label">Advocacy & Education</span>
-            <h1>Laws of Man vs. <span class="highlight">Laws of Technology</span></h1>
-            <p>Our digital environment is as vital as our physical one. AEAH.org is dedicated to protecting the population from electronic abuse, technology misuse, and the harassment of the digital age.</p>
+            <h2 style="font-size: 4rem; font-weight: 800; margin: 0;">The AEAH <span style="color:var(--gold)">Initiative</span></h2>
+            <p style="font-size: 1.5rem; color: #d1d5db; max-width: 900px; margin: 20px auto;">Restoring autonomy to the human environment through the **Law of Man**. We advocate for the right to a molecularly pure and signal-silent existence.</p>
         </div>
     </section>
 
-    
-    <section class="philosophy-section">
-        <div class="container">
-            <div class="philosophy-grid">
-                <div class="text-block">
-                    <h2>Restoring Digital Ethics</h2>
-                    <p>Technology has evolved faster than the laws designed to protect us. When hackers gain access to private data, or when algorithms are designed to cause addiction (doom-scrolling), it is a violation of our <strong>Human Environment</strong>.</p>
-                    <p>We believe technology should be a tool for achievement, not a weapon for harassment. We study both the "Mental Achievements" enabled by tech and the "Mental Issues" caused by its misuse.</p>
-                </div>
-                <div class="mission-list">
-                    <h3>The AEAH Mandate:</h3>
-                    <ul>
-                        <li><strong>Defense:</strong> Advocacy against electronic harassment and signal intrusion.</li>
-                        <li><strong>Education:</strong> Teaching the reality of how digital signals affect our biology.</li>
-                        <li><strong>Reform:</strong> Pushing for technology laws to catch up with the rights of man.</li>
-                        <li><strong>Balance:</strong> Mitigating the environmental impact of massive data farms.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+        <section class="law-section">
+            <div class="law-text">
+                <h2 style="font-size: 3rem; font-weight: 900;">Upholding the Law of Man</h2>
+                <p style="font-size: 1.2rem; color: var(--slate);">The AEAH (Atmospheric, Environmental, and Human) Initiative is the social-governance arm of Clean Blue Green Corp. We believe that no individual should be subject to unauthorized electromagnetic trespass or chemical poisoning.</p>
+                
+                
 
-    <section class="dual-impact">
-        <div class="container">
-            <div class="impact-split">
-                <div class="impact-side side-negative">
-                    <h4>The Risks (The Abuse)</h4>
-                    <ul>
-                        <li>Data Hijacking & Privacy Intrusion</li>
-                        <li>Signal Harassment & EMF Overload</li>
-                        <li>Addictive Algorithmic Engineering</li>
-                        <li>Electronic Stalking & Abuse</li>
-                    </ul>
-                </div>
-                <div class="impact-side side-positive">
-                    <h4>The Vision (The Achievement)</h4>
-                    <ul>
-                        <li>Secure, Private Infrastructure</li>
-                        <li>Human-Centric Digital Limits</li>
-                        <li>Educational Empowerment</li>
-                        <li>Sustainable Technology Integration</li>
-                    </ul>
+                <div class="pillar-grid">
+                    <div class="pillar-card">
+                        <h4>Environmental Justice</h4>
+                        <p>Removing toxic VOCs and industrial runoff from community lifelines.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>Signal Sovereignty</h4>
+                        <p>Ensuring private residences are free from pulsed microwave harassment.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>Kinetic Equity</h4>
+                        <p>Providing vertical-axis wind power to off-grid and rural communities.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h4>Legal Forensics</h4>
+                        <p>Documenting signal crimes to provide justice for targeted individuals.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="donation-center">
-        <div class="donate-box">
-            <h2>Support Aeah.org</h2>
-            <p>Your contributions fund education and advocacy programs that protect the digital rights of individuals and organizations.</p>
-            <div class="donation-options">
-                <button class="d-btn">$25</button>
-                <button class="d-btn">$50</button>
-                <button class="d-btn">$100</button>
-                <button class="d-btn-custom">Custom Amount</button>
+            <div class="manifesto-box">
+                <span style="font-family: 'JetBrains Mono'; color: var(--gold); font-weight: 800;">OFFICIAL PROCLAMATION</span>
+                <h3>The Bio-Digital Manifesto</h3>
+                <p>Clean Blue Green Corp commits 15% of all verification revenue to the AEAH Legal Defense Fund. We don't just audit; we protect. Our mission is to restore the biological sanctuary of every human being through the deployment of Tier 17-20 Sovereign Protocols.</p>
+                <a href="legal-defense.html" style="display:inline-block; margin-top:20px; color:var(--primary-green); font-weight:800; text-decoration:none;">Learn about the Legal Defense Fund &rarr;</a>
             </div>
-            <a href="donate.html" class="btn-primary">Finalize Donation</a>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <footer class="main-footer">
-        <div class="footer-bottom">
-            <p>&copy; 2026 Clean Blue Green Corp. | Partnered with AEAH.org</p>
+    <footer style="background: #000; color: white; padding: 80px 0; border-top: 10px solid var(--primary-green);">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 Clean Blue Green Corp. | AEAH Initiative | Protecting the Future of Humanity.</p>
         </div>
     </footer>
 
